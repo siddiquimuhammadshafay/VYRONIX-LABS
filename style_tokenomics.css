@@ -150,10 +150,11 @@ h6 {
 .hero {
     display: grid;
     grid-template-columns: 550px 400px 300px;
-    gap: 10px;
+    /* gap: 10px; */
     padding: 0px 40px;
     align-items: center;
     justify-content: space-between;
+    /* border: 2px solid; */
 }
 .container,
 .container * {
@@ -213,6 +214,7 @@ h6 {
     /* padding: 0px 0px 0; */
     position: relative;
     z-index: 2;
+    /* border: 2px solid red */
 }
 
 .heading1 {
@@ -273,7 +275,7 @@ h6 {
 }
 
 .spec-item {
-    width: 80%;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -298,95 +300,6 @@ h6 {
 }
 
 
-
-.content .buttons {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 16px;
-    margin-bottom: 12px;
-}
-
-.content .buttons button {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    border-radius: 8px;
-    padding: 12px 20px;
-    font-size: 13px;
-    font-weight: 700;
-    letter-spacing: 0.5px;
-    cursor: pointer;
-    border: none;
-}
-
-.content .buttons h4 {
-    /* font-family: "Space Grotesk", sans-serif; */
-    font-size: 15px;
-    font-weight: 700;
-    letter-spacing: 0.3px;
-}
-
-.btn-primary {
-    background: linear-gradient(135deg, #0891B2 0%, #2563EB 100%);
-}
-
-.btn-primary h4,
-.btn-primary img {
-    color: #ffffff;
-}
-
-.btn-primary img {
-    height: 15px;
-}
-
-.btn-secondary {
-    background: transparent;
-    border: 1px solid #67E8F9 !important;
-}
-
-.btn-secondary h4 {
-    color: #67E8F9;
-}
-
-.btn-secondary img {
-    height: 15px;
-}
-
-.playButton button {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    background: transparent;
-    border: 1px solid rgba(255, 255, 255, 0.12);
-    border-radius: 8px;
-    padding: 12px 20px;
-    cursor: pointer;
-}
-
-.playButton h4 {
-    font-family: "Space Grotesk", sans-serif;
-    color: #ffffff;
-    font-size: 15px;
-    font-weight: 700;
-}
-
-.play-circle {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 26px;
-    height: 26px;
-    border-radius: 50%;
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    background: rgba(255, 255, 255, 0.03);
-}
-
-.play-circle img {
-    height: 14px;
-}
-
-
 /* ---------- Center: logo design ---------- */
 
 /* ===== Base Reset ===== */
@@ -402,7 +315,9 @@ h6 {
   flex-direction: column;
   align-items: center;
   gap: 16px;
+margin-top: 80px;
   justify-content: flex-start;
+  /* border: 2px solid red; */
 }
 
 
@@ -424,10 +339,11 @@ h6 {
 
 .pie-chart-image {
   position: absolute;
-  left: 108px;
-  top: 20px;
+  /* left: 10px; */
+  /* top: 1px; */
   height: auto;
   overflow: visible;
+  margin-bottom: 15px;
 }
 
 /* ===== Supply Info ===== */
@@ -436,10 +352,11 @@ h6 {
   flex-direction: column;
   align-items: center;
   width: 100%;
-  height: 52px;
+  height: 60px;
   flex-shrink: 0;
   position: relative;
   margin-top: -12px;
+  margin-bottom: 20px;
 }
 
 .supply-label {
@@ -468,23 +385,27 @@ h6 {
   font-size: 15px;
   font-weight: 400;
   line-height: 16.5px;
+  /* margin-bottom: 10px; */
 }
 
 /* ===== Legend Grid ===== */
 .legend-grid {
   display: grid;
   grid-template-columns: repeat(4, 118px);
-  gap: 8px 8px;
+  gap: 10px 20px;
   width: 100%;
-  height: 91.5px;
+  height: 100px;
   flex-shrink: 0;
+  /* border: 1px solid blue; */
 }
 
 /* ===== Individual Legend Item ===== */
 .legend-item {
   display: flex;
   align-items: center;
-  gap: 6px;
+  /* width: 150px; */
+  /* margin-right: 20px; */
+  /* margin-right: 20px; */
   padding: 6px 8px;
   border-radius: 6px;
   border: 1px solid rgba(124, 58, 237, 0.13);
@@ -530,19 +451,20 @@ h6 {
   flex-direction: column;
   align-items: flex-start;
   flex: 1;
+  padding: 5px;
 }
 
 .label {
   color: #e2e8f0;
   font-family: "Inter-SemiBold", sans-serif;
-  font-size: 9.5px;
+  font-size: 15px;
   font-weight: 600;
   line-height: 14.25px;
 }
 
 .percentage {
   font-family: "Inter-ExtraBold", sans-serif;
-  font-size: 9px;
+  font-size: 10px;
   font-weight: 800;
   line-height: 13.5px;
 }
@@ -609,108 +531,183 @@ h6 {
 
 /* ---------- Right: stats ---------- */
 
-.stats {
+.right {
     display: flex;
     flex-direction: column;
-    gap: 16px;
-    margin-top: 20px;
+    gap: 20px;
+    margin-left: 20px;
+    /* margin-top: -100px; */
 }
 
-.stat-card {
+.right-item {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
-    padding: 20px;
     border: 2px solid rgba(255, 255, 255, 0.08);
     border-radius: 12px;
 }
 
-.left-Content h2 {
+
+.right-item .img-container{
+    align-self: center;
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.right-item-orange{
+    background-color: rgba(245, 158, 11, 0.08);
+    
+    width: 50px;
+
+}
+
+.right-item-purple{
+    background-color: rgba(168, 85, 247, 0.08);
+    
+    width: 50px;
+
+}
+
+
+.right-item-blue{
+    background-color:rgba(96, 165, 250, 0.08);
+    
+    width: 50px;
+
+}
+
+.right-item-green{
+    background-color:rgba(52, 211, 153, 0.08);
+    
+    width: 50px;
+
+}
+
+.right-item-pink{
+    background-color:rgba(236, 72, 153, 0.08);
+    
+    width: 50px;
+
+}
+.right-item .right-text h3{
     font-family: "Space Grotesk", sans-serif;
     color: #9aa3b8;
     font-size: 11px;
     font-weight: 600;
     letter-spacing: 0.5px;
     text-transform: uppercase;
-    margin-bottom: 6px;
+    /* margin-top: ; */
+    /* margin-bottom: 4px; */
 }
 
-.left-Content h1 {
+.right-text .orange-text{
     font-family: "Space Grotesk", sans-serif;
-    color: #ffffff;
-    font-size: 27px;
-    font-weight: 1000;
-    margin-bottom: 8px;
+    /* color: #9aa3b8; */
+    font-size: 16px;
+    font-weight: 600;
+    color: rgba(245, 158, 11, 1);
 }
 
-.progress {
+
+.right-text .purple-text{
+    font-family: "Space Grotesk", sans-serif;
+     color:rgba(168, 85, 247, 1);
+    font-size: 16px;
+    font-weight: 600;
+   /* color: rgba(245, 158, 11, 1); */
+}
+
+.right-text .blue-text{
+    font-family: "Space Grotesk", sans-serif;
+    /* color: #9aa3b8; */
+    font-size: 16px;
+    font-weight: 600;
+    color: rgba(96, 165, 250, 1);
+}
+
+
+
+.right-text .green-text{
+    font-family: "Space Grotesk", sans-serif;
+    /* color: #9aa3b8; */
+    font-size: 16px;
+    font-weight: 600;
+    color: rgba(52, 211, 153, 1);
+}
+
+.right-text .pink-text{
+    font-family: "Space Grotesk", sans-serif;
+    /* color: #9aa3b8; */
+    font-size: 16px;
+    font-weight: 600;
+    color:rgba(236, 72, 153, 1);
+}
+
+
+
+
+
+
+
+
+
+
+
+.right .buttons {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-bottom: 12px;
+}
+
+.right .buttons button {
     display: flex;
     align-items: center;
-    gap: 4px;
-}
-
-.progress .arrow {
-    font-size: 11px;
-}
-
-.progress h2 {
-    font-size: 11px;
+    gap: 10px;
+    border-radius: 8px;
+    padding: 12px 20px;
+    font-size: 13px;
     font-weight: 700;
-    letter-spacing: 0;
-    text-transform: none;
-    margin-bottom: 0;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    border: none;
 }
 
-.progress-purple .arrow,
-.progress-purple h2 {
-    color: #22c55e;
+.right .buttons h4 {
+    /* font-family: "Space Grotesk", sans-serif; */
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 0.3px;
 }
 
-.progress-blue .arrow,
-.progress-blue h2 {
-    color: #22c55e;
+.btn-primary {
+    background: linear-gradient(135deg, #0891B2 0%, #2563EB 100%);
 }
 
-.progress-green .arrow,
-.progress-green h2 {
-    color: #22c55e;
+.btn-primary h4,
+.btn-primary img {
+    color: #ffffff;
 }
 
-.progress-orange .arrow,
-.progress-orange h2 {
-    color: #22c55e;
+.btn-primary img {
+    height: 15px;
 }
 
-.right-content {
-    width: 100px;
-    height: 32px;
+.btn-secondary {
+    background: transparent;
+    border: 1px solid #67E8F9 !important;
 }
 
-.mini-chart {
-    width: 100%;
-    height: 100%;
+.btn-secondary h4 {
+    color: #67E8F9;
 }
 
-.mini-chart polyline {
-    fill: none;
-    stroke-width: 2;
+.btn-secondary img {
+    height: 15px;
 }
 
-.mini-chart-purple polyline {
-    stroke: #a855f7;
-}
-
-.mini-chart-blue polyline {
-    stroke: #60a5fa;
-}
-
-.mini-chart-green polyline {
-    stroke: #22c55e;
-}
-
-.mini-chart-orange polyline {
-    stroke: #f59e0b;
-}
 
 /* ---------- Section divider ---------- */
 
