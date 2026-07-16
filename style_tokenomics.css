@@ -174,7 +174,7 @@ h1, h2, h3, h4, h5, h6 {
   background: rgba(245, 158, 11, 0.04);
   color: #fff;
 }
-.spec-icon { font-size: 18px; flex-shrink: 0; }
+.spec-icon img { width: 15px; height: 15px; }
 .spec-label { color: #94a3b8; font-size: 13px; font-weight: 500; flex: 1; }
 .spec-value { color: #f1f5f9; font-size: 13px; font-weight: 700; }
 
@@ -225,10 +225,10 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
   align-items: center;
   gap: 8px;
-  padding: 6px 10px;
+  padding: 10px 10px;
   border-radius: 6px;
   border: 1px solid rgba(124, 58, 237, 0.13);
-  background: rgba(124, 58, 237, 0.05);
+  background: rgba(0, 0, 0, 0.05);
 }
 .legend-item > div { display: flex; flex-direction: column; line-height: 1.2; }
 
@@ -245,7 +245,7 @@ h1, h2, h3, h4, h5, h6 {
 .legend-label {
   color: #e2e8f0;
   font-family: "Inter-SemiBold", sans-serif;
-  font-size: 12px;
+  font-size: 15px;
   font-weight: 600;
 }
 .legend-pct {
@@ -283,8 +283,8 @@ h1, h2, h3, h4, h5, h6 {
   background: rgba(7, 15, 31, 0.5);
 }
 .stat-icon {
-  width: 44px;
-  height: 44px;
+  width: 50px;
+  height: 50px;
   border-radius: 10px;
   display: flex;
   align-items: center;
@@ -292,6 +292,12 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 20px;
   flex-shrink: 0;
 }
+
+.stat-icon .img-container img{
+    width: 20px;
+    height: 20px;
+}
+
 .stat-orange { background: rgba(245, 158, 11, 0.08); }
 .stat-purple { background: rgba(168, 85, 247, 0.08); }
 .stat-blue { background: rgba(96, 165, 250, 0.08); }
@@ -369,17 +375,18 @@ h1, h2, h3, h4, h5, h6 {
 .gov-title,
 .utility-title {
   color: #f1f5f9;
-  font-family: "Inter-ExtraBold", sans-serif;
-  font-size: 16px;
-  font-weight: 800;
-  margin: 0;
+  font-family: "Inter", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+
 }
 
 .gold-underline,
 .gold-line {
   background: linear-gradient(90deg, #f59e0b, #d97706);
-  width: 40px;
+  width: 70px;
   height: 2px;
+    margin-bottom: 20px;
 }
 
 /* ========================================
@@ -401,10 +408,10 @@ h1, h2, h3, h4, h5, h6 {
   padding: 18px;
 }
 
-.card-title {
+.card-header .card-title {
   color: #f59e0b;
-  font-family: "Inter-ExtraBold", sans-serif;
-  font-size: 11px;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
   letter-spacing: 1.1px;
   font-weight: 800;
 }
@@ -431,16 +438,16 @@ h1, h2, h3, h4, h5, h6 {
 .header-cell {
   color: #64748b;
   font-family: "Inter-Bold", sans-serif;
-  font-size: 10px;
+  font-size: 15px;
   font-weight: 700;
 }
-.row-label { color: #e2e8f0; font-size: 10px; font-weight: 500; }
-.price-value { color: #34d399; font-size: 10px; font-weight: 600; }
-.token-amount { color: #94a3b8; font-size: 10px; }
-.raise-amount { color: #94a3b8; font-size: 10px; }
-.tge-value { color: #60a5fa; font-size: 10px; }
-.cliff-value { color: #94a3b8; font-size: 10px; }
-.linear-value { color: #94a3b8; font-size: 10px; }
+.row-label { color: #e2e8f0; font-size: 12px; font-weight: 500; padding-right: 2px; }
+.price-value { color: #34d399; font-size: 12px; font-weight: 600; }
+.token-amount { color: #94a3b8; font-size: 12px; }
+.raise-amount { color: #94a3b8; font-size: 12px; }
+.tge-value { color: #60a5fa; font-size: 12px; }
+.cliff-value { color: #94a3b8; font-size: 12px; }
+.linear-value { color: #94a3b8; font-size: 12px; }
 .total-label { color: #f59e0b; font-weight: 800; }
 .total-raise { color: #22c55e; font-weight: 800; }
 
