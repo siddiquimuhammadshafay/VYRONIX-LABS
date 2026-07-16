@@ -1,0 +1,21 @@
+# BEGIN cPanel-generated php ini directives, do not edit
+# Manual editing of this file may result in unexpected behavior.
+# To make changes to this file, use the cPanel MultiPHP INI Editor (Home >> Software >> MultiPHP INI Editor)
+# For more information, read our documentation (https://go.cpanel.net/EA4ModifyINI)
+
+<IfModule php8_module>
+   php_value error_log "/home/vyronixa/logs/php.error.log"
+   php_flag log_errors On
+</IfModule>
+
+<IfModule lsapi_module>
+   php_value error_log "/home/vyronixa/logs/php.error.log"
+   php_flag log_errors On
+</IfModule>
+
+RewriteEngine On
+DirectoryIndex index.html
+RewriteRule ^home$ index.html [L]
+RewriteRule ^ai$ page_ai.html [L]
+RewriteRule ^web3$ page_web3.html [L]
+RewriteRule ^depin$ page_depin.html [L]

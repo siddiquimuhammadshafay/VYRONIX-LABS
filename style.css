@@ -1,0 +1,2352 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #000000;
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Inter-Bold", sans-serif;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 72px;
+    padding: 0 30px;
+    background-color: #000000;
+    /* background: rgba(2, 11, 26, 0.95); */
+    border-bottom: 1px solid rgba(139, 92, 246, 0.15);
+}
+
+/* ---------- Logo ---------- */
+
+.navbar .navlogo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.navbar .navlogo .img img {
+    height: 70px;
+    width: auto;
+    display: block;
+}
+
+.vyronix2 {
+    color: #ffffff;
+    text-align: center;
+    font-family: "Orbitron";
+    font-size: 22px;
+    line-height: 24px;
+    letter-spacing: 2px;
+    font-weight: 700;
+    position: static;
+}
+
+.labs2 {
+    background: linear-gradient(90deg,
+            rgba(96, 165, 250, 1) 0%,
+            rgba(168, 85, 247, 1) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    font-family: "Orbitron", sans-serif;
+    font-size: 18px;
+    line-height: 16px;
+    letter-spacing: 6px;
+    font-weight: 600;
+    position: static;
+    margin-top: 2px;
+}
+
+/* ---------- Nav links ---------- */
+
+.Navpages ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.Navpages ul li a {
+    display: inline-block;
+    text-decoration: none;
+    color: #8b93a7;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    padding: 8px 16px;
+    border-radius: 8px;
+    border: 1px solid transparent;
+    transition:
+        color 0.2s ease,
+        border-color 0.2s ease,
+        background 0.2s ease;
+}
+
+.Navpages ul li a:hover {
+    color: #ffffff;
+}
+
+.Navpages ul li.active a {
+    color: #ffffff;
+    border: 1px solid #7c3aed;
+    background: rgba(124, 58, 237, 0.08);
+}
+
+/* ---------- Join button ---------- */
+
+.JoiningButton button {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: transparent;
+    border: 1px solid #7c3aed;
+    border-radius: 8px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+.JoiningButton button:hover {
+    background: rgba(124, 58, 237, 0.1);
+}
+
+.JoiningButton button img {
+    height: 16px;
+    width: auto;
+}
+
+.JoiningButton button h3 {
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+.hamburger img {
+    height: 40px;
+}
+
+/* ---------- Main layout ---------- */
+
+.main {
+    display: grid;
+    grid-template-columns: 100%;
+}
+
+.sections .hero {
+    position: relative;
+    width: 100%;
+    background-image: url("icones/Main\ Logo\ 02.webp");
+    background-position: right 0px top 0px;
+    background-repeat: no-repeat;
+    background-size: 60% auto;
+    padding-bottom: 15px;
+}
+
+.hero .hero-content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 650px;
+    padding: 20px 30px 0;
+    position: relative;
+    z-index: 2;
+}
+
+.hero-visual {
+    display: none;
+}
+
+/* ---------- Badge ---------- */
+
+.hero-badge {
+    display: inline-flex;
+    align-self: flex-start;
+    align-items: center;
+    padding: 6px 16px;
+    border: 1px solid rgba(124, 58, 237, 0.4);
+    border-radius: 20px;
+    background: rgba(124, 58, 237, 0.08);
+}
+
+.hero-badge span {
+    font-size: 12px;
+
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    color: #a78bfa;
+}
+
+
+
+
+/* ---------- Headings ---------- */
+
+.headings h1 {
+    font-family: "Orbitron";
+    color: #ffffff;
+    font-size: clamp(32px, 5vw, 70px);
+    font-weight: 800;
+    line-height: 1.1;
+    text-transform: uppercase;
+    font-size: clamp(28px, 4.5vw, 59.85px);
+    /* max value kam ki, 70px se 56px */
+    overflow-wrap: break-word;
+    word-break: break-word;
+    hyphens: auto;
+
+}
+
+.headings h1:nth-child(2) {
+    background: linear-gradient(90deg, #60a5fa 0%, #a855f7 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.para p {
+    color: #9aa3b8;
+    font-size: 16px;
+    line-height: 1.6;
+    max-width: 440px;
+}
+
+
+
+/* ---------- Buttons ---------- */
+
+.buttons {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-top: 6px;
+}
+
+.buttons button {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-radius: 8px;
+    padding: 12px 20px;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    border: none;
+}
+
+.buttons button:first-child {
+    background: linear-gradient(90deg, #7c3aed, #6366f1);
+    color: #ffffff;
+}
+
+.buttons button:first-child img {
+    height: 14px;
+}
+
+.buttons button:last-child {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    color: #ffffff;
+}
+
+.buttons button:last-child img {
+    height: 18px;
+}
+
+/* ---------- Divider ---------- */
+
+.techs-divider {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+
+}
+
+.techs-divider span {
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #6b7280;
+    white-space: nowrap;
+}
+
+.techs-divider::before,
+.techs-divider::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background: rgba(255, 255, 255, 0.08);
+}
+
+.techs-divider::before {
+    margin-right: 12px;
+}
+
+.techs-divider::after {
+    margin-left: 12px;
+}
+
+/* ---------- Tech cards ---------- */
+
+.techs {
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 5px;
+    display: flex;
+    width: 100%;
+    max-width: 700px;
+}
+
+.techs>div {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    gap: 10px;
+    background: rgba(255, 255, 255, 0.02);
+    padding: 10px 10px;
+    /* border: 2px solid red; */
+}
+
+.techs .img img {
+    height: 60px;
+    width: 60px;
+}
+
+.techs .text h2 {
+    font-size: 20px;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+    color: #ffffff;
+}
+
+.techs .text p {
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+    color: #9aa3b8;
+}
+
+.techs .text .tech-desc {
+    display: none;
+}
+
+/* ---------- Stats bar ---------- */
+.stats-bar {
+    display: grid;
+    grid-template-columns: repeat(3, 210px);
+    grid-template-rows: repeat(2, auto);
+    justify-content: space-around;
+    row-gap: 20px;
+    border-top: 1px solid rgba(230, 216, 216, 0.15);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+    padding: 18px 40px;
+}
+
+.stat {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    width: 310px;
+}
+
+.stat-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 8px;
+    background: rgba(124, 58, 237, 0.1);
+    border: 1px solid rgba(124, 58, 237, 0.25);
+    flex-shrink: 0;
+}
+
+.stat-icon img {
+    width: 18px;
+    height: 18px;
+}
+
+.stat-text h3 {
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.stat-text p {
+    color: #9aa3b8;
+    font-size: 15px;
+    margin-top: 2px;
+}
+
+/* ---------- Ecosystem cards ---------- */
+
+.ecosystem-cards {
+    padding: 10px 40px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.card {
+    padding: 32px 28px;
+    border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.card:last-child {
+    border-right: none;
+}
+
+.card-tag {
+    display: inline-block;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    padding: 4px 10px;
+    border-radius: 6px;
+    margin-bottom: 16px;
+}
+
+.card h3 {
+    color: #ffffff;
+    font-size: 20px;
+    line-height: 1.3;
+    margin-bottom: 12px;
+}
+
+.card>p {
+    color: #9aa3b8;
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 24px;
+}
+
+.card ul {
+    list-style: none;
+    margin-bottom: 28px;
+}
+
+.card ul li {
+    position: relative;
+    padding-left: 16px;
+    color: #c3c9d9;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.card ul li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 8px;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+}
+
+.card-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+.card-link img {
+    height: 12px;
+}
+
+/* Card accent colors */
+
+.card-ai .card-tag {
+    background: rgba(96, 165, 250, 0.15);
+    color: #60a5fa;
+}
+
+.card-ai ul li::before {
+    background: #60a5fa;
+}
+
+.card-ai .card-link {
+    color: #60a5fa;
+}
+
+.card-web3 .card-tag {
+    background: rgba(168, 85, 247, 0.15);
+    color: #a855f7;
+}
+
+.card-web3 ul li::before {
+    background: #a855f7;
+}
+
+.card-web3 .card-link {
+    color: #a855f7;
+}
+
+.card-depin .card-tag {
+    background: rgba(34, 197, 94, 0.15);
+    color: #22c55e;
+}
+
+.card-depin ul li::before {
+    background: #22c55e;
+}
+
+.card-depin .card-link {
+    color: #22c55e;
+}
+
+.card-ecosystem .card-tag {
+    background: rgba(234, 179, 8, 0.15);
+    color: #eab308;
+}
+
+.card-ecosystem ul li::before {
+    background: #eab308;
+}
+
+.card-ecosystem .card-link {
+    color: #eab308;
+}
+
+/* Problem Solution Section */
+
+.problem-solution {
+    padding: 10px 40px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.ps-col {
+    padding: 30px 28px;
+    border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.ps-col:last-child {
+    border-right: none;
+}
+
+.ps-col h3 {
+    color: #ffffff;
+    font-size: 20px;
+    letter-spacing: 0.5px;
+    margin-bottom: 16px;
+}
+
+.ps-col>p {
+    color: #9aa3b8;
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 24px;
+}
+
+.ps-list {
+    list-style: none;
+}
+
+.ps-list li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+    color: #c3c9d9;
+    margin-bottom: 14px;
+}
+
+.ps-list li img {
+    width: 16px;
+    height: 16px;
+    flex-shrink: 0;
+}
+
+/* ---------- CTA column ---------- */
+
+.presale-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    background: linear-gradient(90deg, #7c3aed, #6366f1);
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    padding: 14px 20px;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    margin-bottom: 16px;
+}
+
+.presale-btn img {
+    height: 15px;
+}
+
+.learn-more-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: #9aa3b8;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    text-decoration: none;
+}
+
+.learn-more-link img {
+    height: 10px;
+}
+
+.ps-col-cta {
+    background: #0a0e2b;
+}
+
+/* Tokeconomics Section */
+.tokenomics-section {
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    display: grid;
+    grid-template-columns: 240px 340px 1fr 220px;
+    gap: 30px;
+    padding: 40px 40px;
+    align-items: start;
+}
+
+.section-heading {
+    color: #a855f7;
+    font-size: 17px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    margin-bottom: 8px;
+}
+
+.section-subtext {
+    color: #9aa3b8;
+    font-size: 13px;
+    margin-bottom: 18px;
+}
+
+.pie-chart {
+    width: 150px;
+    margin-bottom: 18px;
+}
+
+.pie-chart img {
+    width: 100%;
+    display: block;
+}
+
+.legend {
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+.legend li {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 13px;
+    color: #c3c9d9;
+    margin-bottom: 8px;
+}
+
+.legend li b {
+    margin-left: auto;
+    color: #ffffff;
+    font-weight: 700;
+}
+
+.dot {
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+.dot-ecosystem {
+    background: #a855f7;
+}
+
+.dot-investors {
+    background: #3b82f6;
+}
+
+.dot-community {
+    background: #22c55e;
+}
+
+.dot-treasury {
+    background: #f59e0b;
+}
+
+.dot-team {
+    background: #ef4444;
+}
+
+.dot-advisors {
+    background: #ec4899;
+}
+
+.dot-liquidity {
+    background: #06b6d4;
+}
+
+.dot-public {
+    background: #9333ea;
+}
+
+.view-breakdown-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: #a855f7;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    text-decoration: none;
+}
+
+.view-breakdown-link img {
+    height: 11px;
+}
+
+/* ---------- Card panels ---------- */
+
+.card-panel {
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.015);
+    padding: 18px;
+}
+
+.card-heading {
+    color: #a855f7;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    margin-bottom: 16px;
+}
+
+/* ---------- Presale details table ---------- */
+
+.detail-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 9px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+
+}
+
+.detail-row-last {
+    border-bottom: none;
+}
+
+.detail-row span {
+    color: #9aa3b8;
+    font-size: 15px;
+}
+
+.detail-row b {
+    color: #ffffff;
+    font-weight: 600;
+    text-align: right;
+}
+
+/* ---------- Presale stages table ---------- */
+
+.stages-row {
+    display: grid;
+    grid-template-columns: 1.4fr 1fr 1fr 1fr;
+    gap: 10px;
+    padding: 9px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+    font-size: 13px;
+    color: #ffffff;
+}
+
+.stages-header {
+    color: #9aa3b8;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.3px;
+}
+
+.stages-total {
+    background: rgba(124, 58, 237, 0.08);
+    margin: 0 -18px;
+    padding: 9px 18px;
+    border-bottom: none;
+    font-weight: 700;
+    border-radius: 0 0 12px 12px;
+}
+
+.stages-total span:first-child {
+    color: #a855f7;
+}
+
+.highlight-green {
+    color: #22c55e;
+}
+
+/* ---------- Presale info ---------- */
+
+.presale-info-col {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.info-item {
+    margin-bottom: 12px;
+}
+
+.info-item span {
+    display: block;
+    color: #9aa3b8;
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: 0.3px;
+    margin-bottom: 4px;
+}
+
+.info-item b {
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.join-presale-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background: linear-gradient(90deg, #7c3aed, #6366f1);
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    padding: 13px 18px;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+}
+
+.join-presale-btn img {
+    height: 15px;
+}
+
+/* tech section */
+.tech-section {
+    padding: 30px 40px;
+    border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.tech-heading-wrap {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.tech-heading {
+    color: #9aa3b8;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.tech-heading span {
+    color: #ffffff;
+}
+
+.tech-heading-underline {
+    width: 200px;
+    height: 2px;
+    background: linear-gradient(90deg, #7c3aed, #a855f7);
+    margin: 14px auto 0;
+}
+
+.tech-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 16px;
+}
+
+.tech-card {
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 12px;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.015);
+}
+
+.tech-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.04);
+    margin-bottom: 16px;
+}
+
+.tech-icon img {
+    width: 22px;
+    height: 22px;
+}
+
+.tech-card h3 {
+    color: #ffffff;
+    font-size: 17px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.tech-card p {
+    color: #9aa3b8;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+/* Roadmap Section */
+.roadmap-section {
+    padding: 40px 60px;
+}
+
+.roadmap-heading {
+    text-align: center;
+    color: #9aa3b8;
+    font-size: 20px;
+    letter-spacing: 1.5px;
+    margin-bottom: 40px;
+}
+
+/* ---------- Stepper ---------- */
+
+.roadmap-stepper {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.stepper-line {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: linear-gradient(90deg, #7c3aed, #3b82f6, #a855f7);
+    transform: translateY(-50%);
+    z-index: 0;
+}
+
+.step {
+    position: relative;
+    z-index: 1;
+    justify-self: center;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 700;
+    background: #1a1330;
+    border: 2px solid #7c3aed;
+}
+
+.step-done {
+    background: #4c1d95;
+    border-color: #a855f7;
+}
+
+.step-active {
+    background: #7c3aed;
+    border-color: #a855f7;
+    box-shadow: 0 0 20px 4px rgba(168, 85, 247, 0.5);
+}
+
+/* ---------- Phase cards ---------- */
+
+.roadmap-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 16px;
+    margin-bottom: 32px;
+}
+
+.phase-card {
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 12px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.015);
+}
+
+.phase-card-active {
+    background: rgba(124, 58, 237, 0.08);
+    border-color: rgba(168, 85, 247, 0.4);
+}
+
+.phase-label {
+    display: block;
+    color: #9aa3b8;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+}
+
+.phase-label-active {
+    color: #a855f7;
+}
+
+.phase-card h3 {
+    color: #ffffff;
+    font-size: 16px;
+    margin-bottom: 12px;
+}
+
+.phase-quarter {
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.06);
+    color: #c3c9d9;
+    font-size: 11px;
+    font-weight: 700;
+    padding: 4px 10px;
+    border-radius: 6px;
+    margin-bottom: 16px;
+}
+
+.phase-quarter-active {
+    background: #7c3aed;
+    color: #ffffff;
+}
+
+.phase-list {
+    list-style: none;
+}
+
+.phase-list li {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.check {
+    font-size: 12px;
+    flex-shrink: 0;
+}
+
+.phase-list-done li {
+    color: #c3c9d9;
+}
+
+.phase-list-done .check {
+    color: #22c55e;
+}
+
+.phase-list-active li {
+    color: #d8b4fe;
+}
+
+.phase-list-active .check {
+    color: #a855f7;
+}
+
+.phase-list-upcoming li {
+    color: #5b6478;
+}
+
+.phase-list-upcoming .check {
+    color: #3a4256;
+}
+
+/* ---------- View roadmap button ---------- */
+
+.view-roadmap-wrap {
+    text-align: center;
+}
+
+.view-roadmap-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid #7c3aed;
+    border-radius: 8px;
+    padding: 12px 24px;
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    text-decoration: none;
+}
+
+.view-roadmap-btn img {
+    height: 11px;
+}
+
+/* ------------- team section ------------- */
+.team-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    gap: 24px;
+    padding: 30px 60px;
+    background: #030d20;
+    border-top: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.team-section>div {
+    text-align: center;
+}
+
+.section-heading-white {
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+    margin-bottom: 24px;
+}
+
+/* ---------- Team + advisors shared ---------- */
+
+.team-grid,
+.advisors-grid {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    margin-bottom: 20px;
+}
+
+.team-member {
+    width: 100px;
+    text-align: center;
+}
+
+.team-member-offset {
+    margin-left: 40px;
+}
+
+.avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid;
+    margin-bottom: 10px;
+}
+
+.avatar-cyan {
+    border-color: #22d3ee;
+    box-shadow: 0 0 12px rgba(34, 211, 238, 0.4);
+}
+
+.avatar-green {
+    border-color: #22c55e;
+    box-shadow: 0 0 12px rgba(34, 197, 94, 0.4);
+}
+
+.avatar-orange {
+    border-color: #f59e0b;
+    box-shadow: 0 0 12px rgba(245, 158, 11, 0.4);
+}
+
+.avatar-purple {
+    border-color: #a855f7;
+    box-shadow: 0 0 12px rgba(168, 85, 247, 0.4);
+}
+
+.team-member h4 {
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 2px;
+}
+
+.team-member p {
+    color: #9aa3b8;
+    font-size: 13px;
+}
+
+.view-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: #a855f7;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    text-decoration: none;
+}
+
+.view-link img {
+    height: 11px;
+}
+
+/* ---------- Backed by ---------- */
+
+.card-panel {
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.015);
+    padding: 20px;
+}
+
+.partner-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    margin-bottom: 16px;
+}
+
+.partner {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    border-radius: 8px;
+    padding: 12px 14px;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.partner img {
+    width: 18px;
+    height: 18px;
+}
+
+.more-partners {
+    color: #6b7280;
+    font-size: 12px;
+}
+
+
+/* Footer section */
+
+.footer-columns {
+    display: grid;
+    grid-template-columns: 1.3fr 1fr 1fr 1fr 1fr;
+    gap: 30px;
+    padding: 30px;
+}
+
+.footer-heading {
+    color: #a855f7;
+    font-size: 18px;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+    margin-bottom: 16px;
+}
+
+.footer-text {
+    color: #9aa3b8;
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 16px;
+}
+
+/* ---------- Bullet list (col 1) ---------- */
+
+.footer-bullets {
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+.footer-bullets li {
+    position: relative;
+    padding-left: 16px;
+    color: #c3c9d9;
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+
+.footer-bullets li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 8px;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: #a855f7;
+}
+
+.footer-icon-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    border-radius: 10px;
+    background: rgba(124, 58, 237, 0.1);
+}
+
+.footer-icon-box img {
+    width: 22px;
+    height: 22px;
+}
+
+
+/* ---------- Arrow list (col 2) ---------- */
+
+.footer-arrow-list {
+    list-style: none;
+}
+
+.footer-arrow-list li {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #c3c9d9;
+    font-size: 13px;
+    margin-bottom: 14px;
+}
+
+.footer-arrow-list li img {
+    width: 10px;
+    height: 10px;
+}
+
+/* ---------- Social icons + join button (col 3) ---------- */
+
+.social-icons {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.social-icons a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 38px;
+    height: 38px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.social-icons a img {
+    width: 16px;
+    height: 16px;
+}
+
+.join-community-btn {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: linear-gradient(90deg, #7c3aed, #6366f1);
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    padding: 14px 22px;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+}
+
+.join-community-btn img {
+    height: 12px;
+}
+
+/* ---------- Email form (col 4) ---------- */
+
+.email-form {
+    display: flex;
+    gap: 8px;
+}
+
+.email-form input {
+    flex: 1;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    padding: 12px 14px;
+    color: #ffffff;
+    font-size: 13px;
+}
+
+.email-form input::placeholder {
+    color: #6b7280;
+}
+
+.email-form button {
+    background: #7c3aed;
+    border: none;
+    border-radius: 8px;
+    width: 44px;
+    flex-shrink: 0;
+    cursor: pointer;
+}
+
+.email-form button img {
+    width: 16px;
+    height: 16px;
+}
+
+/* ---------- FAQ list (col 5) ---------- */
+
+.faq-list {
+    list-style: none;
+    margin-bottom: 16px;
+}
+
+.faq-list li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    color: #c3c9d9;
+    font-size: 14px;
+    padding: 12px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.faq-list li img {
+    width: 8px;
+    height: 8px;
+    flex-shrink: 0;
+}
+
+.view-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: #a855f7;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    text-decoration: none;
+}
+
+.view-link img {
+    height: 11px;
+}
+
+/* footer */
+.footer-bottom {
+    display: grid;
+    grid-template-columns: 1.6fr 1fr 1fr 1fr 1fr;
+    gap: 24px;
+    padding: 40px 100px;
+    border-top: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 16px;
+}
+
+.footer-logo img {
+    height: 40px;
+    width: auto;
+}
+
+.footer-tagline {
+    color: #9aa3b8;
+    font-size: 15px;
+    line-height: 1.6;
+    max-width: 220px;
+}
+
+.footer-links-col h4,
+.footer-follow-col h4 {
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    margin-bottom: 16px;
+}
+
+.footer-links-col ul {
+    list-style: none;
+}
+
+.footer-links-col li {
+    margin-bottom: 12px;
+}
+
+.footer-links-col a {
+    color: #9aa3b8;
+    font-size: 13px;
+    text-decoration: none;
+}
+
+.footer-links-col a:hover {
+    color: #ffffff;
+}
+
+.footer-follow-col .social-icons {
+    display: flex;
+    gap: 10px;
+}
+
+.footer-follow-col .social-icons a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 34px;
+    height: 34px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.footer-follow-col .social-icons a img {
+    width: 14px;
+    height: 14px;
+}
+
+
+/* ---------- Drawer Styles ---------- */
+
+/* Overlay */
+.drawer-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(4px);
+    z-index: 999;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.drawer-overlay.active {
+    display: block;
+    opacity: 1;
+}
+
+/* Drawer */
+.drawer {
+    position: fixed;
+    top: 0;
+    left: -320px;
+    /* Hidden off-screen */
+    width: 320px;
+    height: 100%;
+    background: #0a0e2b;
+    border-right: 1px solid rgba(139, 92, 246, 0.2);
+    z-index: 1000;
+    transition: left 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    padding: 24px 20px;
+    overflow-y: auto;
+}
+
+.drawer.open {
+    left: 0;
+    /* Slide in */
+}
+
+/* Drawer Header */
+.drawer-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+    margin-bottom: 20px;
+}
+
+.drawer-logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.drawer-logo img {
+    height: 36px;
+    width: auto;
+}
+
+.drawer-logo span {
+    color: #ffffff;
+    font-family: "Orbitron", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.drawer-close {
+    background: none;
+    border: none;
+    color: #9aa3b8;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 4px 8px;
+    transition: color 0.2s ease;
+}
+
+.drawer-close:hover {
+    color: #ffffff;
+}
+
+/* Drawer Navigation */
+.drawer-nav {
+    list-style: none;
+    flex: 1;
+    padding: 0;
+}
+
+.drawer-nav li {
+    margin-bottom: 4px;
+}
+
+.drawer-nav li a {
+    display: block;
+    text-decoration: none;
+    color: #8b93a7;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    padding: 12px 16px;
+    border-radius: 8px;
+    transition: all 0.2s ease;
+}
+
+.drawer-nav li a:hover {
+    color: #ffffff;
+    background: rgba(124, 58, 237, 0.08);
+}
+
+.drawer-nav li.active a {
+    color: #ffffff;
+    background: rgba(124, 58, 237, 0.12);
+    border-left: 3px solid #7c3aed;
+}
+
+/* Drawer Footer */
+.drawer-footer {
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.drawer-join-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    background: linear-gradient(90deg, #7c3aed, #6366f1);
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    padding: 14px 20px;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    margin-bottom: 16px;
+}
+
+.drawer-join-btn img {
+    height: 16px;
+    width: auto;
+}
+
+.drawer-social {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.drawer-social a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 38px;
+    height: 38px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.05);
+    transition: background 0.2s ease;
+}
+
+.drawer-social a:hover {
+    background: rgba(124, 58, 237, 0.2);
+}
+
+.drawer-social a img {
+    width: 16px;
+    height: 16px;
+}
+
+
+/* ---------- Drawer: Explore Vyronix list (shown by default) ---------- */
+
+.drawer-explore-nav {
+    list-style: none;
+    padding: 0;
+}
+
+.explore-label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #6b7280;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding: 8px 16px;
+    margin-bottom: 8px;
+}
+
+.explore-label .dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #a855f7;
+}
+
+.drawer-explore-nav li a {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+    color: #8b93a7;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 12px 16px;
+    border-radius: 8px;
+    margin-bottom: 4px;
+    transition: all 0.2s ease;
+}
+
+.drawer-explore-nav li a img {
+    width: 18px;
+    height: 18px;
+}
+
+.drawer-explore-nav li a:hover {
+    color: #ffffff;
+    background: rgba(124, 58, 237, 0.08);
+}
+
+.drawer-explore-nav li.active a {
+    color: #ffffff;
+    background: #7c3aed;
+}
+
+/* ---------- Drawer: page-link list hidden until Navpages is hidden ---------- */
+.drawer-nav {
+    display: none;
+}
+
+/* Prevent body scroll when drawer is open */
+body.no-scroll {
+    overflow: hidden;
+}
+
+/* Dividing Line */
+/* ---------- Section Dividers ---------- */
+
+.sections>div {
+    border-bottom: 2px solid;
+    border-image: linear-gradient(90deg, #7c3aed, #a855f7, #7c3aed) 1;
+    padding-bottom: 10;
+}
+
+.sections .tokenomics-section,
+.sections .tech-section {
+    border-top: none;
+    border-right: none;
+    border-left: none;
+}
+
+/* Large screens */
+@media (min-width: 2560px) {
+    .main>div>div {
+        padding: 50px 100px;
+    }
+
+    .stats-bar,
+    .ecosystem-cards,
+    .tokenomics-section,
+    .problem-solution,
+    .tech-grid,
+    .roadmap-grid,
+    .footer-bottom {
+        gap: 100px;
+    }
+
+}
+
+/*  small laptops */
+@media (max-width: 1300px) {
+
+    /* ---------- Navbar shrink ---------- */
+    .navbar {
+        padding: 0 20px;
+    }
+
+    .Navpages ul {
+        gap: 2px;
+    }
+
+    .Navpages ul li a {
+        padding: 8px 10px;
+        font-size: 12px;
+    }
+
+    .JoiningButton button {
+        padding: 8px 14px;
+    }
+
+    .JoiningButton button h3 {
+        font-size: 12px;
+    }
+
+    /* ---------- Tokenomics section: 2x2 ---------- */
+    .tokenomics-section {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    /* ---------- Footer columns section: 3x2 ---------- */
+    .footer-columns {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+}
+
+/* Tablets (landscape) */
+@media (max-width: 1024px) {
+
+    /* ---------- Navbar: stacked column ---------- */
+    .navbar {
+        height: auto;
+        gap: 16px;
+        padding: 20px;
+    }
+
+    .navbar {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .Navpages,
+    .JoiningButton {
+        margin: auto;
+    }
+
+    .navlogo {
+        grid-row: 1;
+        grid-column: 1/2;
+    }
+
+    .Navpages {
+        grid-row: 2;
+        grid-column: 1/3;
+    }
+
+    .JoiningButton {
+        grid-row: 3;
+        grid-column: 1/3;
+    }
+
+    .hamburger {
+        margin-left: auto;
+    }
+
+    /* ---------- Ecosystem cards: 2x2 ---------- */
+    .ecosystem-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .card {
+        border-right: none;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+    }
+
+    /* ---------- Problem/solution: 2x2 ---------- */
+    .problem-solution {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .ps-col {
+        border-right: none;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+        padding-bottom: 24px;
+        margin-bottom: 24px;
+    }
+
+    /* ---------- Tech grid: 3 columns ---------- */
+    .tech-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    /* ---------- Footer columns: 3x2 ---------- */
+    .footer-columns {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    .footer-bottom {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .footer-brand {
+        grid-column: 1 / -1;
+        margin-bottom: 24px;
+    }
+}
+
+/* Tablets (portrait) */
+@media (max-width: 768px) {
+
+    /* ---------- Navbar: back to row, links hidden ---------- */
+    .navbar {
+        display: flex;
+        flex-direction: row;
+        height: 72px;
+        padding: 0 20px;
+        justify-content: center;
+    }
+
+    .navlogo {
+        margin-right: auto;
+    }
+
+    .Navpages {
+        display: none;
+    }
+
+    .JoiningButton {
+        margin: 0;
+        margin-left: auto;
+    }
+
+    .hamburger {
+        margin: 0;
+        display: inline-block;
+        order: 3;
+    }
+
+    .hamburger img {
+        height: 50px;
+    }
+
+    .drawer-nav {
+        display: block;
+        margin-top: 16px;
+        padding-top: 16px;
+        border-top: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    .hero .hero-content {
+        max-width: 100%;
+        padding: 40px 20px;
+        gap: 20px;
+    }
+
+    .headings h1 {
+        font-size: 32px;
+        line-height: 1.15;
+    }
+
+    .para p {
+        font-size: 14px;
+        max-width: 100%;
+    }
+
+    .buttons {
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+
+    .buttons button {
+        padding: 12px 18px;
+        font-size: 13px;
+    }
+
+    .techs {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    /* ---------- Stats bar: 2 columns ---------- */
+    .stats-bar {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .stats-bar>div {
+        margin: 10px auto;
+    }
+
+
+    /* ---------- Tokenomics: 1 column ---------- */
+    .tokenomics-section {
+        grid-template-columns: 1fr;
+    }
+
+    /* ---------- Roadmap: 1 column ---------- */
+    .roadmap-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .roadmap-stepper {
+        display: none;
+    }
+
+    /* ---------- Team section: 1 column ---------- */
+    .team-section {
+        grid-template-columns: 1fr;
+    }
+
+    /* ---------- Footer columns: 1 column ---------- */
+    .footer-columns {
+        grid-template-columns: 1fr;
+    }
+
+    /* ---------- Footer bottom: logo stays full width, links 2x2 ---------- */
+    .footer-bottom {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer-brand {
+        grid-column: 1 / -1;
+    }
+
+}
+
+
+/* Mobile */
+@media (max-width: 480px) {
+
+    .navbar {
+        height: 60px;
+    }
+
+    .navbar .navlogo .img img {
+        height: 50px;
+        width: auto;
+        display: block;
+    }
+
+
+    .vyronix2 {
+        color: #ffffff;
+        text-align: center;
+        font-family: "Orbitron";
+        font-size: 16px;
+        line-height: 20px;
+        letter-spacing: 2px;
+        font-weight: 700;
+        position: static;
+    }
+
+    .labs2 {
+        background: linear-gradient(90deg,
+                rgba(96, 165, 250, 1) 0%,
+                rgba(168, 85, 247, 1) 100%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        text-align: center;
+        font-family: "Orbitron", sans-serif;
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: 8px;
+        font-weight: 600;
+        position: static;
+        margin-top: 2px;
+    }
+
+
+    .stats-bar {
+        grid-template-columns: 1fr;
+        justify-content: initial;
+        row-gap: 0;
+        padding: 0;
+    }
+
+    .stat {
+        width: 100%;
+        align-items: flex-start;
+        gap: 14px;
+        padding: 18px 20px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+
+    }
+
+    .stat:last-child {
+        border-bottom: none;
+    }
+
+    .stat-icon {
+        width: 44px;
+        height: 44px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .stat-icon img {
+        width: 18px;
+        height: 18px;
+    }
+
+    .stat-text h3 {
+        font-size: 15px;
+    }
+
+    .stat-text p {
+        font-size: 14px;
+        margin-top: 3px;
+        line-height: 1.4;
+    }
+
+    .ecosystem-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .problem-solution {
+        grid-template-columns: 1fr;
+    }
+
+    .tech-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-bottom {
+        grid-template-columns: 1fr;
+
+    }
+
+    .footer-heading {
+        font-size: 20px;
+
+    }
+
+    .footer-columns {
+        padding-top: 20px;
+
+    }
+
+    .footer-text {
+        font-size: 16px;
+        /* apni pasand ka size dedo, jaise 15px, 17px, 1rem, etc */
+        line-height: 1.6;
+        /* readability ke liye achha rehta hai */
+    }
+
+    .footer-bullets li {
+        font-size: 15px;
+        /* is ko bhi apne hisaab se adjust kro */
+        line-height: 1.5;
+    }
+
+
+    .footer-tagline {
+        font-size: 16px;
+    }
+
+    /* ---------- Navbar: icon-only button ---------- */
+    .JoiningButton button {
+        padding: 8px;
+        border: 1px solid #7c3aed;
+        background: transparent;
+        border-radius: 8px;
+    }
+
+    .JoiningButton button h3 {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+
+    .hamburger img {
+        height: 35px;
+    }
+
+    .sections .hero {
+        background-color: rgba(5, 12, 26, 0.95);
+        background-image: url('icones/Main\ Logo\ 02.webp');
+        background-position: 37% 30%;
+        background-repeat: no-repeat;
+        background-size: 65%;
+        box-shadow: inset -18px -20px 2000px 20px rgba(0, 0, 0, 1);
+    }
+
+    .hero .hero-content {
+        align-items: center;
+        padding: 5px;
+        gap: 10px;
+    }
+
+    .hero-badge {
+        margin: 6px auto;
+        transform: scale(0.9);
+    }
+
+    .headings h1 {
+        font-size: 22px !important;
+        letter-spacing: 10px;
+        font-weight: 300;
+    }
+
+
+    .headings h1[class*="Building The"] {
+        text-align: center;
+    }
+
+    .headings h1[class*="Decentralized"] {
+        text-align: center;
+    }
+
+    .headings h1[class*="Future"] {
+
+        text-align: center;
+    }
+
+    .para p {
+        font-size: 13px;
+        color: white;
+        max-width: 300px;
+        text-align: center;
+        font-weight: 400;
+        margin: 0 auto;
+    }
+
+    /* ---------- Buttons: full width, stacked, chevron ---------- */
+    .hero .buttons {
+        margin-top: 180px;
+        flex-direction: column;
+        width: 100%;
+        gap: 10px;
+    }
+
+    .buttons button {
+        width: 80%;
+        justify-content: flex-start;
+        position: relative;
+        padding: 14px 20px;
+    }
+
+    .buttons button::after {
+        content: "›";
+        position: absolute;
+        right: 20px;
+        font-size: 18px;
+        color: inherit;
+    }
+
+    /* ---------- Tech cards: bordered stacked cards ---------- */
+    .techs {
+        flex-direction: column;
+        width: 90%;
+        max-width: 100%;
+        border: none;
+        gap: 12px;
+
+    }
+
+    .techs>div {
+        background-color: #000000;
+        position: relative;
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        border-radius: 12px;
+        padding: 10px;
+        /* background: rgba(255, 255, 255, 0.02); */
+    }
+
+    .techs .text {
+        flex: 1;
+    }
+
+    .techs .text h2 {
+        font-size: 18px;
+        font-weight: 700;
+        margin-bottom: 2px;
+    }
+
+    .techs .text p {
+        font-size: 13px;
+        font-weight: 500;
+        color: #9aa3b8;
+        letter-spacing: 0;
+        margin-bottom: 6px;
+        width: 80%;
+    }
+
+    .tech-desc {
+        font-size: 12px !important;
+        font-weight: 400 !important;
+        color: #9aa3b8 !important;
+        line-height: 1.5;
+    }
+
+    .tech-chevron {
+        position: absolute;
+        right: 16px;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 40px;
+        height: 40px;
+        font-weight: 700;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: rgba(255, 255, 255, 0.05);
+        color: #ffffff;
+        font-size: 16px;
+    }
+
+    /* Per-card accent colors matching the screenshot */
+    .techs>div:nth-child(1) .text h2 {
+        color: #60a5fa;
+    }
+
+    .techs>div:nth-child(2) .text h2 {
+        color: #a855f7;
+    }
+
+    .techs>div:nth-child(3) .text h2 {
+        color: #22c55e;
+    }
+
+    .techs>div:nth-child(1) .tech-chevron {
+        color: #60a5fa;
+    }
+
+    .techs>div:nth-child(2) .tech-chevron {
+        color: #a855f7;
+    }
+
+    .techs>div:nth-child(3) .tech-chevron {
+        color: #22c55e;
+    }
+}

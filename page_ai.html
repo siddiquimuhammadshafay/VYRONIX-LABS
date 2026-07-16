@@ -1,0 +1,859 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VYRONIX Labs</title>
+      <base href="/"/>
+    <link rel="shortcut icon" href="icones/VLOGO.webp" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@700;800&family=Orbitron:wght@600;700&display=swap"
+    />
+    
+    <link rel="stylesheet" href="styles_ai.css" />
+    <style></style>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+      <div class="navlogo">
+        <div class="img">
+          <img src="icones/VLOGO.webp" alt="" />
+        </div>
+        <div>
+          <div>
+            <h2 class="vyronix2">VYRONIX</h2>
+            <h2 class="labs2">LABS</h2>
+          </div>
+        </div>
+      </div>
+      <div class="Navpages">
+        <ul>
+          <li ><a href="/home">HOME</a></li>
+          <li><a href="">ABOUT</a></li>
+          <li><a href="">ECOSYSTEM</a></li>
+          <li><a href="">TECHNOLOGY</a></li>
+          <li><a href="">ROADMAP</a></li>
+          <li><a href="">PARTNERS</a></li>
+          <li><a href="">DOCS</a></li>
+        </ul>
+      </div>
+      <div class="JoiningButton">
+        <button>
+          <img src="icones/rocket.svg" alt="" />
+          <h3>JOIN THE FUTURE</h3>
+        </button>
+      </div>
+      <div class="hamburger">
+        <img src="icones/hamburgerimg.png" alt="menu" />
+      </div>
+    </nav>
+
+    <!-- Drawer Overlay -->
+    <div class="drawer-overlay" id="drawerOverlay"></div>
+
+    <!-- Drawer -->
+    <div class="drawer" id="drawer">
+      <div class="drawer-header">
+        <div class="drawer-logo">
+          <img src="icones/VLOGO.webp" alt="Logo" />
+          <span>VYRONIX LABS</span>
+        </div>
+        <button class="drawer-close" id="drawerClose">✕</button>
+      </div>
+
+      <ul class="drawer-explore-nav">
+        <li class="explore-label"><span class="dot"></span>EXPLORE VYRONIX</li>
+        <li>
+          <a href="/home"
+            ><img src="icones/overview.svg" alt="" /><span>Overview</span></a
+          >
+        </li>
+        <li class="active">
+          <a href="/ai"
+            ><img src="icones/ai.svg" alt="" /><span>AI</span></a
+          >
+        </li>
+        <li>
+          <a href="/web3"
+            ><img src="icones/web3.svg" alt="" /><span>Web3</span></a
+          >
+        </li>
+        <li>
+          <a href="/depin"><img src="icones/depin.svg" alt="" /><span>DePIN</span></a>
+        </li>
+        <li>
+          <a href="/ecosystem"
+            ><img src="icones/ecosystem.svg" alt="" /><span>Ecosystem</span></a
+          >
+        </li>
+        <li>
+          <a href="/token"
+            ><img src="icones/token.svg" alt="" /><span>Tokenomics</span></a
+          >
+        </li>
+        <li>
+          <a href="/roadmap"
+            ><img src="icones/roadmap.svg" alt="" /><span>Roadmap</span></a
+          >
+        </li>
+        <li>
+          <a href="/community"
+            ><img src="icones/community.svg" alt="" /><span>Community</span></a
+          >
+        </li>
+        <li>
+          <a href=""><img src="icones/docs.svg" alt="" /><span>Docs</span></a>
+        </li>
+        <li>
+          <a href=""><img src="icones/faqs.svg" alt="" /><span>FAQ</span></a>
+        </li>
+      </ul>
+
+      <ul class="drawer-nav">
+        <li><a href="/home">HOME</a></li>
+        <li><a href="#">ABOUT</a></li>
+        <li><a href="#">ECOSYSTEM</a></li>
+        <li><a href="#">TECHNOLOGY</a></li>
+        <li><a href="#">ROADMAP</a></li>
+        <li><a href="#">PARTNERS</a></li>
+        <li><a href="#">DOCS</a></li>
+      </ul>
+
+      <div class="drawer-footer">
+        <button class="drawer-join-btn">
+          <img src="icones/jointhefuture.png" alt="" />
+          JOIN THE FUTURE
+        </button>
+        <div class="drawer-social">
+          <a href="#"><img src="icones/X.png" alt="X" /></a>
+          <a href="#"><img src="icones/palne.png" alt="Telegram" /></a>
+          <a href="#"><img src="icones/dot.png" alt="Discord" /></a>
+          <a href="#"><img src="icones/m.png" alt="Medium" /></a>
+          <a href="#"><img src="icones/in.png" alt="LinkedIn" /></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main -->
+    <main class="main">
+      <div class="sections">
+        <!-- Hero Section -->
+        <div class="hero">
+          <div class="content">
+            <div class="heading1">
+              <h1>VYRONIX</h1>
+              <h1 class="accent">AI</h1>
+            </div>
+            <div class="heading2">
+              <h2>Decentralized</h2>
+              <h2>Intelligence Infrastructure</h2>
+            </div>
+            <div class="para">
+              <p>
+                The intelligence layer powering autonomous agents, AI
+                applications, model marketplaces, and distributed compute
+                networks.
+              </p>
+            </div>
+            <div class="buttons">
+              <button class="btn-primary">
+                <h4>Launch AI App</h4>
+                <img src="icones/ai/launchAiPlane.svg" alt="" />
+              </button>
+              <button class="btn-secondary">
+                <img src="icones/ai/aiDocumentation.svg" alt="" />
+                <h4>AI Documentation</h4>
+              </button>
+            </div>
+            <div class="playButton">
+              <button>
+                <span class="play-circle">
+                  <img src="icones/ai/watchDemo.svg" alt="" />
+                </span>
+                <h4>Watch Demo</h4>
+              </button>
+            </div>
+          </div>
+
+          <div class="logo-center">
+            <img src="icones/ai/BrainOrb.webp" alt="Vyronix Labs" />
+          </div>
+
+          <div class="stats">
+            <div class="stat-card card-panel">
+              <div class="left-Content">
+                <h2>AI Agents Deployed</h2>
+                <h1>128K+</h1>
+                <div class="progress progress-purple">
+                  <span class="arrow">↗</span>
+                  <h2>+24.5% this month</h2>
+                </div>
+              </div>
+              <div class="right-content">
+                <svg viewBox="0 0 100 40" class="mini-chart mini-chart-purple">
+                  <polyline points="0,30 15,25 30,28 45,15 60,20 75,8 100,5" />
+                </svg>
+              </div>
+            </div>
+
+            <div class="stat-card card-panel">
+              <div class="left-Content">
+                <h2>Models Available</h2>
+                <h1>3,462+</h1>
+                <div class="progress progress-blue">
+                  <span class="arrow">↗</span>
+                  <h2>+18.7% this month</h2>
+                </div>
+              </div>
+              <div class="right-content">
+                <svg viewBox="0 0 100 40" class="mini-chart mini-chart-blue">
+                  <polyline points="0,25 15,28 30,20 45,22 60,12 75,18 100,6" />
+                </svg>
+              </div>
+            </div>
+
+            <div class="stat-card card-panel">
+              <div class="left-Content">
+                <h2>Inference Requests</h2>
+                <h1>24.8M+</h1>
+                <div class="progress progress-green">
+                  <span class="arrow">↗</span>
+                  <h2>+32.1% this month</h2>
+                </div>
+              </div>
+              <div class="right-content">
+                <svg viewBox="0 0 100 40" class="mini-chart mini-chart-green">
+                  <polyline points="0,32 15,20 30,24 45,10 60,16 75,6 100,4" />
+                </svg>
+              </div>
+            </div>
+
+            <div class="stat-card card-panel">
+              <div class="left-Content">
+                <h2>Compute Capacity</h2>
+                <h1>48.7 PFLOPS</h1>
+                <div class="progress progress-orange">
+                  <span class="arrow">↗</span>
+                  <h2>+26.3% this month</h2>
+                </div>
+              </div>
+              <div class="right-content">
+                <svg viewBox="0 0 100 40" class="mini-chart mini-chart-orange">
+                  <polyline points="0,20 15,26 30,18 45,24 60,14 75,20 100,8" />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Core Components -->
+        <div class="core-Components">
+          <h1>Core Components</h1>
+          <p>The building blocks of the Vyronix AI ecosystem</p>
+          <div class="cards">
+            <div class="comp-cards card-blue">
+              <div class="img-container">
+                <img src="icones/ai/aiCompute.svg" alt="" />
+              </div>
+              <h3>AI Compute Network</h3>
+              <p>
+                Community-powered GPU and CPU marketplace for AI training and
+                inference.
+              </p>
+              <button>
+                <h3>Explore</h3>
+                <svg
+                  class="arrow"
+                  width="10"
+                  height="10"
+                  viewBox="0 0 10 10"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M2.08337 5H7.91671"
+                    stroke="currentColor"
+                    stroke-width="0.833333"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M5 2.08331L7.91667 4.99998L5 7.91665"
+                    stroke="currentColor"
+                    stroke-width="0.833333"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </button>
+            </div>
+
+            <div class="comp-cards card-purple">
+              <div class="img-container">
+                <img src="icones/ai/aiAgent.svg" alt="" />
+              </div>
+              <h3>AI Agent Framework</h3>
+              <p>Build, deploy, and monetize autonomous AI agents.</p>
+              <button>
+                <h3>Explore</h3>
+                <svg
+                  class="arrow"
+                  width="10"
+                  height="10"
+                  viewBox="0 0 10 10"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M2.08337 5H7.91671"
+                    stroke="currentColor"
+                    stroke-width="0.833333"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M5 2.08331L7.91667 4.99998L5 7.91665"
+                    stroke="currentColor"
+                    stroke-width="0.833333"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </button>
+            </div>
+
+            <div class="comp-cards card-teal">
+              <div class="img-container">
+                <img src="icones/ai/aiModel.svg" alt="" />
+              </div>
+              <h3>AI Model Marketplace</h3>
+              <p>Publish, discover, and monetize AI models globally.</p>
+              <button>
+                <h3>Explore</h3>
+                <svg
+                  class="arrow"
+                  width="10"
+                  height="10"
+                  viewBox="0 0 10 10"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M2.08337 5H7.91671"
+                    stroke="currentColor"
+                    stroke-width="0.833333"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M5 2.08331L7.91667 4.99998L5 7.91665"
+                    stroke="currentColor"
+                    stroke-width="0.833333"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </button>
+            </div>
+
+            <div class="comp-cards card-purple">
+              <div class="img-container">
+                <img src="icones/ai/aiData.svg" alt="" />
+              </div>
+              <h3>AI Data Marketplace</h3>
+              <p>Access verified datasets for training and inference.</p>
+              <button>
+                <h3>Explore</h3>
+                <svg
+                  class="arrow"
+                  width="10"
+                  height="10"
+                  viewBox="0 0 10 10"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M2.08337 5H7.91671"
+                    stroke="currentColor"
+                    stroke-width="0.833333"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M5 2.08331L7.91667 4.99998L5 7.91665"
+                    stroke="currentColor"
+                    stroke-width="0.833333"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </button>
+            </div>
+
+            <div class="comp-cards card-orange">
+              <div class="img-container">
+                <img src="icones/ai/aiInterface.svg" alt="" />
+              </div>
+              <h3>AI Inference Network</h3>
+              <p>
+                Run AI applications at scale without managing infrastructure.
+              </p>
+              <button>
+                <h3>Explore</h3>
+                <svg
+                  class="arrow"
+                  width="10"
+                  height="10"
+                  viewBox="0 0 10 10"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M2.08337 5H7.91671"
+                    stroke="currentColor"
+                    stroke-width="0.833333"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M5 2.08331L7.91667 4.99998L5 7.91665"
+                    stroke="currentColor"
+                    stroke-width="0.833333"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </button>
+            </div>
+
+            <div class="comp-cards card-green">
+              <div class="img-container">
+                <img src="icones/ai/enterpriseAi.svg" alt="" />
+              </div>
+              <h3>Enterprise AI Suite</h3>
+              <p>
+                Private deployments, business automation, and AI operations.
+              </p>
+              <button>
+                <h3>Explore</h3>
+                <svg
+                  class="arrow"
+                  width="10"
+                  height="10"
+                  viewBox="0 0 10 10"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M2.08337 5H7.91671"
+                    stroke="currentColor"
+                    stroke-width="0.833333"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M5 2.08331L7.91667 4.99998L5 7.91665"
+                    stroke="currentColor"
+                    stroke-width="0.833333"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- AI Use Cases & Revenue Streams -->
+        <div class="usecases-revenue">
+          <div class="usecases-col">
+            <h1>AI Use Cases</h1>
+            <p>Real-world applications powered by decentralized intelligence</p>
+            <div class="usecase-grid">
+              <div class="usecase-card usecase-purple">
+                <div class="img-container">
+                  <img src="icones/ai/aiAgent.svg" alt="" />
+                </div>
+                <p>AI Agents</p>
+              </div>
+              <div class="usecase-card usecase-blue">
+                <div class="img-container">
+                  <img src="icones/ai/researchAssistant.svg" alt="" />
+                </div>
+                <p>Research Assistants</p>
+              </div>
+              <div class="usecase-card usecase-orange">
+                <div class="img-container">
+                  <img src="icones/ai/autonomousTrading.svg" alt="" />
+                </div>
+                <p>Autonomous Trading</p>
+              </div>
+              <div class="usecase-card usecase-green">
+                <div class="img-container">
+                  <img src="icones/ai/enterpriseAutomation.svg" alt="" />
+                </div>
+                <p>Enterprise Automation</p>
+              </div>
+              <div class="usecase-card usecase-pink">
+                <div class="img-container">
+                  <img src="icones/ai/predictiveAnalysis.svg" alt="" />
+                </div>
+                <p>Predictive Analytics</p>
+              </div>
+              <div class="usecase-card usecase-cyan">
+                <div class="img-container">
+                  <img src="icones/ai/web3Ai.svg" alt="" />
+                </div>
+                <p>Web3 AI Applications</p>
+              </div>
+              <div class="usecase-card usecase-gold">
+                <div class="img-container">
+                  <img src="icones/ai/deFiIntelligence.webp" alt="" />
+                </div>
+                <p>DeFi Intelligence</p>
+              </div>
+              <div class="usecase-card usecase-purple">
+                <div class="img-container">
+                  <img src="icones/ai/smartGovernance.svg" alt="" />
+                </div>
+                <p>Smart Governance</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="revenue-col">
+            <h1>AI Revenue Streams</h1>
+            <p>Sustainable revenue model driving ecosystem growth</p>
+            <div class="revenue-list">
+              <div class="revenue-row">
+                <div class="img-container revenue-blue">
+                  <img src="icones/ai/aiCompute.svg" alt="" />
+                </div>
+                <div class="revenue-text">
+                  <h3>Compute Fees</h3>
+                  <p>
+                    Earn from providing GPU / CPU resources used for training
+                    and inference.
+                  </p>
+                </div>
+              </div>
+              <div class="revenue-row">
+                <div class="img-container revenue-purple">
+                  <img src="icones/ai/aiData.svg" alt="" />
+                </div>
+                <div class="revenue-text">
+                  <h3>Dataset Marketplace</h3>
+                  <p>Earn from premium datasets and data access.</p>
+                </div>
+              </div>
+              <div class="revenue-row">
+                <div class="img-container revenue-green">
+                  <img src="icones/ai/aiAgent2.svg" alt="" />
+                </div>
+                <div class="revenue-text">
+                  <h3>AI Agent Marketplace</h3>
+                  <p>Revenue through agent deployment and usage fees.</p>
+                </div>
+              </div>
+              <div class="revenue-row">
+                <div class="img-container revenue-orange">
+                  <img src="icones/ai/enterpriceServices.svg" alt="" />
+                </div>
+                <div class="revenue-text">
+                  <h3>Enterprise Services</h3>
+                  <p>Provide enterprise-grade AI solutions and integrations.</p>
+                </div>
+              </div>
+              <div class="revenue-row">
+                <div class="img-container revenue-pink">
+                  <img src="icones/ai/modelMarketplace.svg" alt="" />
+                </div>
+                <div class="revenue-text">
+                  <h3>Model Marketplace</h3>
+                  <p>Monetize models through licensing and API access.</p>
+                </div>
+              </div>
+              <div class="revenue-row">
+                <div class="img-container revenue-cyan">
+                  <img src="icones/ai/premiumAPIs.webp" alt="" />
+                </div>
+                <div class="revenue-text">
+                  <h3>Premium APIs</h3>
+                  <p>Access advanced AI capabilities via premium APIs.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Why Vyronix AI -->
+        <div class="why-Vyronix">
+          <div class="main-content">
+            <div class="why-left">
+              <div class="heading">
+                <h1>Why Vyronix AI?</h1>
+              </div>
+              <div class="para">
+                <p>
+                  Because intelligence should be decentralized, transparent, and
+                  owned by the community.
+                </p>
+              </div>
+              <div class="lists">
+                <div class="list-item">
+                  <div class="img-container list-blue">
+                    <img src="icones/ai/decentralized.svg" alt="" />
+                  </div>
+                  <div class="list-text">
+                    <h3>Decentralized</h3>
+                    <p>No single entity controls the network.</p>
+                  </div>
+                </div>
+                <div class="list-item">
+                  <div class="img-container list-green">
+                    <img src="icones/ai/transparent.svg" alt="" />
+                  </div>
+                  <div class="list-text">
+                    <h3>Transparent</h3>
+                    <p>On-chain verification and audit trails ensure trust.</p>
+                  </div>
+                </div>
+                <div class="list-item">
+                  <div class="img-container list-purple">
+                    <img src="icones/ai/communityOwned.svg" alt="" />
+                  </div>
+                  <div class="list-text">
+                    <h3>Community Owned</h3>
+                    <p>Built, governed, and owned by the community.</p>
+                  </div>
+                </div>
+                <div class="list-item">
+                  <div class="img-container list-orange">
+                    <img src="icones/ai/openPermissionless.svg" alt="" />
+                  </div>
+                  <div class="list-text">
+                    <h3>Open &amp; Permissionless</h3>
+                    <p>Anyone can build, deploy, and participate.</p>
+                  </div>
+                </div>
+                <div class="list-item">
+                  <div class="img-container list-pink">
+                    <img src="icones/ai/secureVerifiable.svg" alt="" />
+                  </div>
+                  <div class="list-text">
+                    <h3>Secure &amp; Verifiable</h3>
+                    <p>Advanced security and privacy protections.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="why-center"></div>
+            <div class="why-right">
+              <div class="heading">
+                <h1>Intelligence</h1>
+                <h1>Belongs To</h1>
+                <h1 class="accent">Everyone.</h1>
+              </div>
+              <div class="para">
+                <p>
+                  Vyronix AI is creating an open, decentralized, and inclusive
+                  AI economy for the next generation.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="stat-cards">
+            <div class="stat-item">
+              <div class="img-container stat-purple">
+                <img src="icones/ai/aiAgent.svg" alt="" />
+              </div>
+              <div class="text">
+                <h1>128K+</h1>
+                <p>AI Agents Deployed</p>
+              </div>
+            </div>
+            <div class="stat-item">
+              <div class="img-container stat-blue">
+                <img src="icones/ai/modelsAvailable.svg" alt="" />
+              </div>
+              <div class="text">
+                <h1>3,462+</h1>
+                <p>AI Models Available</p>
+              </div>
+            </div>
+            <div class="stat-item">
+              <div class="img-container stat-orange">
+                <img src="icones/ai/inferenceRequests.svg" alt="" />
+              </div>
+              <div class="text">
+                <h1>24.8M+</h1>
+                <p>Inference Requests</p>
+              </div>
+            </div>
+            <div class="stat-item">
+              <div class="img-container stat-green">
+                <img src="icones/ai/computeCapacity.svg" alt="" />
+              </div>
+              <div class="text">
+                <h1>48.7 PFLOPS</h1>
+                <p>Compute Capacity</p>
+              </div>
+            </div>
+            <div class="stat-item">
+              <div class="img-container stat-cyan">
+                <img src="icones/ai/countries.svg" alt="" />
+              </div>
+              <div class="text">
+                <h1>56+</h1>
+                <p>Countries</p>
+              </div>
+            </div>
+            <div class="stat-item">
+              <div class="img-container stat-pink">
+                <img src="icones/ai/nodeOperators.svg" alt="" />
+              </div>
+              <div class="text">
+                <h1>8,900+</h1>
+                <p>Node Operators</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="cta-block">
+            <div class="heading">
+              <h1>Be Part Of The Decentralized Intelligence Revolution.</h1>
+            </div>
+            <div class="buttons">
+              <button class="btn-primary">
+                <h4>Launch AI App</h4>
+                <img src="icones/ai/launchAiPlane.svg" alt="" />
+              </button>
+              <button class="btn-secondary">
+                <img src="icones/ai/communityOwned.svg" alt="" />
+                <h4>Join Community</h4>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-bottom">
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <img src="icones/VLOGO.webp" alt="" />
+            <div>
+              <h2 class="vyronix2">VYRONIX</h2>
+              <h2 class="labs2">LABS</h2>
+            </div>
+          </div>
+          <p class="footer-tagline">
+            Building the Decentralized Intelligence Economy.
+          </p>
+        </div>
+
+        <div class="footer-links-col">
+          <h4>COMPANY</h4>
+          <ul>
+            <li><a href="">About Us</a></li>
+            <li><a href="">Blog</a></li>
+            <li><a href="">Careers</a></li>
+            <li><a href="">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links-col">
+          <h4>RESOURCES</h4>
+          <ul>
+            <li><a href="">Whitepaper</a></li>
+            <li><a href="">Brand Kit</a></li>
+            <li><a href="">Media Kit</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links-col">
+          <h4>LEGAL</h4>
+          <ul>
+            <li><a href="">Privacy Policy</a></li>
+            <li><a href="">Terms of Service</a></li>
+            <li><a href="">Disclaimer</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-follow-col">
+          <h4>FOLLOW US</h4>
+          <div class="social-icons">
+            <a href=""><img src="icones/X.png" alt="X" /></a>
+            <a href=""><img src="icones/palne.png" alt="Telegram" /></a>
+            <a href=""><img src="icones/dot.png" alt="Discord" /></a>
+            <a href=""><img src="icones/m.png" alt="Medium" /></a>
+            <a href=""><img src="icones/in.png" alt="LinkedIn" /></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <p>© 2026 Vyronix Labs. All rights reserved.</p>
+        <div class="footer-copyright-links">
+          <a href="">Privacy Policy</a>
+          <a href="">Terms of Service</a>
+          <a href="">Cookie Policy</a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- script for drawer -->
+    <script>
+      // Get elements
+      const hamburger = document.querySelector(".hamburger");
+      const drawer = document.getElementById("drawer");
+      const overlay = document.getElementById("drawerOverlay");
+      const closeBtn = document.getElementById("drawerClose");
+      const body = document.body;
+
+      // Open drawer
+      function openDrawer() {
+        drawer.classList.add("open");
+        overlay.classList.add("active");
+        body.classList.add("no-scroll");
+      }
+
+      // Close drawer
+      function closeDrawer() {
+        drawer.classList.remove("open");
+        overlay.classList.remove("active");
+        body.classList.remove("no-scroll");
+      }
+
+      // Event listeners
+      hamburger.addEventListener("click", openDrawer);
+      closeBtn.addEventListener("click", closeDrawer);
+      overlay.addEventListener("click", closeDrawer);
+
+      // Close on Escape key
+      document.addEventListener("keydown", function (e) {
+        if (e.key === "Escape") {
+          closeDrawer();
+        }
+      });
+
+      // Close when a nav link is clicked
+      document.querySelectorAll(".drawer-nav a").forEach((link) => {
+        link.addEventListener("click", closeDrawer);
+      });
+
+      // Close when join button is clicked
+      document
+        .querySelector(".drawer-join-btn")
+        .addEventListener("click", closeDrawer);
+    </script>
+  </body>
+</html>
