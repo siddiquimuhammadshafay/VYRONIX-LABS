@@ -322,11 +322,13 @@ h1, h2, h3, h4, h5, h6 {
 
 .tokenomics-buttons {
   display: flex;
+  /* justify-content : column; */
   flex-wrap: wrap;
   gap: 12px;
   margin-top: 4px;
 }
 .btn-explore, .btn-whitepaper {
+    
   display: flex;
   align-items: center;
   gap: 10px;
@@ -339,15 +341,15 @@ h1, h2, h3, h4, h5, h6 {
   transition: 0.3s;
 }
 .btn-explore {
-  background: linear-gradient(135deg, #0891b2, #2563eb);
-  color: #fff;
+  background: rgba(217, 119, 6, 1);
+  color: black;
 }
 .btn-explore:hover { transform: translateY(-2px); box-shadow: 0 8px 25px rgba(37, 99, 235, 0.4); }
 .btn-explore svg { stroke: #fff; }
 .btn-whitepaper {
   background: transparent;
-  border: 1px solid #67e8f9 !important;
-  color: #67e8f9;
+  border: 1px solid rgba(245, 158, 11, 0.4) !important;
+  color: rgba(245, 158, 11, 1);
 }
 .btn-whitepaper:hover { background: rgba(103, 232, 249, 0.08); transform: translateY(-2px); }
 .btn-whitepaper svg { stroke: #67e8f9; }
@@ -1109,7 +1111,7 @@ h1, h2, h3, h4, h5, h6 {
 .badge-text {
   color: #f59e0b;
   font-family: "Inter-Bold", sans-serif;
-  font-size: 10px;
+  font-size: 12px;
   letter-spacing: 1px;
   font-weight: 700;
 }
@@ -1117,13 +1119,13 @@ h1, h2, h3, h4, h5, h6 {
 .cta-heading {
   color: #f1f5f9;
   font-family: "Inter-ExtraBold", sans-serif;
-  font-size: 22px;
+  font-size: 40px;
   font-weight: 800;
   margin: 0 0 6px;
 }
 .cta-description {
   color: #94a3b8;
-  font-size: 12px;
+  font-size: 20px;
   line-height: 19.8px;
   max-width: 440px;
   margin: 0 auto;
