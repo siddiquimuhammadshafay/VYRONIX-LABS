@@ -498,7 +498,7 @@ h6 {
 
 .arch-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(5, 1fr);
     gap: 24px;
 }
 
@@ -532,7 +532,7 @@ h6 {
 
 .arch-title h3 {
     color: #ffffff;
-    font-size: 22px;
+    font-size: 18px;
     font-weight: 600;
 }
 
@@ -550,7 +550,7 @@ h6 {
     border: 1px solid rgba(var(--accent), 0.4);
     background: rgba(var(--accent), 0.08);
     color: #cbd5e1;
-    font-size: 18px;
+    font-size: 15px;
     white-space: nowrap;
 }
 
@@ -1101,7 +1101,7 @@ h6 {
 
 .powered-by-label {
     color: #6b7280;
-    font-size: 22px;
+    font-size: 15px;
     font-weight: 700;
     letter-spacing: 1px;
     text-transform: uppercase;
@@ -1128,7 +1128,7 @@ h6 {
     border-radius: 8px;
     padding: 8px 14px;
     color: #c3c9d9;
-    font-size: 18px;
+    font-size: 15px;
     font-weight: 600;
     background: rgba(255, 255, 255, 0.02);
     white-space: nowrap;
@@ -1598,7 +1598,7 @@ body.no-scroll {
     }
 
     .arch-grid {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(4, 1fr);
     }
 
     .eco-grid {
@@ -1650,7 +1650,7 @@ body.no-scroll {
 
     .arch-grid,
     .prod-grid {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(3, 1fr);
     }
 
     .powered-by-bar {
