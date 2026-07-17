@@ -1216,7 +1216,7 @@ body.no-scroll {
     }
 
     .hero .heading1 h1 {
-        font-size: 35px;
+        font-size: 45px !important;
     }
 
     .hero .heading2 h2 {
