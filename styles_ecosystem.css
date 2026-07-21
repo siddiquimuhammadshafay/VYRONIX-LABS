@@ -1153,7 +1153,7 @@ body.no-scroll {
 
     .hero {
         padding: 0px;
-        background-image: url("icones/ecosystem/EcosystemOrb.png");
+        background-image: url("icones/ecosystem/EcosystemOrb.webp");
         background-position: 85% 14%;
         background-repeat: no-repeat;
         background-size: 60% auto;
@@ -1229,7 +1229,7 @@ body.no-scroll {
 
     .sections .hero {
         background-color: rgba(0, 0, 0, 0.95);
-        background-image: url('icones/ecosystem/EcosystemOrb.png');
+        background-image: url('icones/ecosystem/EcosystemOrb.webp');
         background-position: center 13%;
         background-repeat: no-repeat;
         background-size: 80%;

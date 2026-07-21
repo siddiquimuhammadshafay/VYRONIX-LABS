@@ -443,7 +443,7 @@ h6 {
     border-radius: 50%;
     border: 2px solid;
     color: #ffffff;
-    font-size: 14px;
+    font-size: 15px;
     font-weight: 800;
     flex-shrink: 0;
 }
@@ -452,15 +452,15 @@ h6 {
     display: flex;
     align-items: center;
     gap: 4px;
-    font-size: 11px;
+    font-size: 12px;
     font-weight: 700;
     padding: 4px 8px;
     border-radius: 6px;
 }
 
 .phase-status img {
-    width: 12px;
-    height: 12px;
+    width: 15px;
+    height: 15px;
 }
 
 .status-completed {
@@ -493,7 +493,7 @@ h6 {
 
 .phase-label {
     display: block;
-    font-size: 15px;
+    font-size: 16px;
     font-weight: 700;
     letter-spacing: 0.5px;
     text-transform: uppercase;
@@ -531,8 +531,8 @@ h6 {
 }
 
 .phase-list li img {
-    width: 14px;
-    height: 14px;
+    width: 18px;
+    height: 18px;
     flex-shrink: 0;
 }
 
@@ -553,7 +553,7 @@ h6 {
     display: flex;
     align-items: center;
     gap: 6px;
-    font-size: 11px;
+    font-size: 15px;
     font-weight: 700;
     letter-spacing: 0.5px;
     text-transform: uppercase;
@@ -561,12 +561,12 @@ h6 {
 }
 
 .milestone-label img {
-    width: 14px;
-    height: 14px;
+    width: 18px;
+    height: 18px;
 }
 
 .milestone-label h3 {
-    font-size: 11px;
+    font-size: 15px;
     font-weight: 700;
     letter-spacing: 0.5px;
     text-transform: uppercase;
@@ -575,7 +575,7 @@ h6 {
 
 .phase-milestone p {
     color: #ffffff;
-    font-size: 12px;
+    font-size: 13px;
     font-weight: 600;
     margin: 10px 0px 5px 0px;
 }
@@ -890,8 +890,12 @@ h6 {
     line-height: 1.2;
     text-transform: capitalize;
     margin-bottom: 10px;
+    /* margin-top: -0px; */
 }
 
+.why-left .heading h1{
+    /* margin-top: -75px; */
+}
 .why-Vyronix .para p {
     color: #9aa3b8;
     font-size: 16px;
@@ -940,7 +944,7 @@ h6 {
 
 .feature-text h3 {
     color: #ffffff;
-    font-size: 15px;
+    font-size: 18px;
     font-weight: 700;
     margin: 0;
     line-height: 1.3;
@@ -948,7 +952,7 @@ h6 {
 
 .feature-text p {
     color: #9aa3b8;
-    font-size: 13px;
+    font-size: 15px;
     line-height: 1.4;
     margin: 0;
 }
@@ -1002,8 +1006,11 @@ h6 {
 /* ---------- Center: glowing V image ---------- */
 
 .why-center img {
-    height: 100%;
-    width: 100%;
+    height: 120%;
+    width: 120%;
+    /* align-self: center; */
+    justify-content: center;
+    /* margin-right: -150px;     */
 }
 
 /* ---------- Right: compact icon list ---------- */
@@ -1066,7 +1073,7 @@ h6 {
 
 .mini-text h3 {
     color: #ffffff;
-    font-size: 15px;
+    font-size: 18px;
     font-weight: 700;
     margin: 0 0 4px 0;
     line-height: 1.3;
@@ -1074,7 +1081,7 @@ h6 {
 
 .mini-text p {
     color: #9aa3b8;
-    font-size: 13px;
+    font-size: 15px;
     line-height: 1.5;
     margin: 0;
 }
@@ -1155,7 +1162,7 @@ h6 {
 
 .investor-header p {
     color: #9aa3b8;
-    font-size: 18px;
+    font-size: 20px;
     margin: 0;
 }
 
@@ -1227,14 +1234,14 @@ h6 {
 }
 
 .timeline-list li img {
-    width: 14px;
-    height: 14px;
+    width: 18px;
+    height: 18px;
     flex-shrink: 0;
 }
 
 .timeline-list li p {
     color: #c3c9d9;
-    font-size: 14px;
+    font-size: 15px;
     margin: 0;
     line-height: 1.4;
 }
@@ -1451,7 +1458,7 @@ body.no-scroll {
     .hero {
         grid-template-columns: 1fr;
         padding: 20px;
-        background-image: url("icones/roadmap/VyronixLogo.png");
+        background-image: url("icones/roadmap/VyronixLogo.webp");
         background-position: left 450px top 20px;
         background-repeat: no-repeat;
         background-size: 40% auto;
@@ -1546,7 +1553,7 @@ body.no-scroll {
 
     .hero {
         background-color: rgba(0, 0, 0, 0.95);
-        background-image: url('icones/roadmap/VyronixLogo.png');
+        background-image: url('icones/roadmap/VyronixLogo.webp');
         background-position: center 18%;
         background-repeat: no-repeat;
         background-size: 70%;

@@ -1015,7 +1015,7 @@ body.no-scroll {
 
     .hero {
         padding: 0px;
-        background-image: url("icones/ai/BrainOrb.webp");
+        background-image: url("icones/ai/BrainOrb.jpg");
         background-position: left 450px top 20px;
         background-repeat: no-repeat;
         background-size: 40% auto;
@@ -1120,7 +1120,7 @@ body.no-scroll {
 
     .sections .hero {
         background-color: rgba(0, 0, 0, 0.95);
-        background-image: url('icones/ai/BrainOrb.webp');
+        background-image: url('icones/ai/BrainOrb.jpg');
         background-position: center 30%;
         background-repeat: no-repeat;
         background-size: 80%;
