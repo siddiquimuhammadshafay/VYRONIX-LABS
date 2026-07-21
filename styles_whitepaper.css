@@ -86,6 +86,10 @@ body {
   text-transform: uppercase;
 }
 
+.hamburger {
+  display: none;
+}
+
 /* ---------- Layout wrapper (sidebar back in normal flow) ---------- */
 /* ---------- Whitepaper Sidebar (normal, not fixed) and overall layout---------- */
 
@@ -106,7 +110,7 @@ body {
 .wp-sidebar {
   display: flex;
   flex-direction: column;
-  background: #060c1c29;
+  background: black;
   border-right: 1px solid rgba(115, 60, 245, 0.15);
   padding: 24px 20px;
   height: 100%;
@@ -227,6 +231,21 @@ body {
 .wp-download-text p {
   color: #9aa3b8;
   font-size: 11px;
+}
+
+
+/* sidebar overlay */
+
+.wp-sidebar-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 150;
+}
+
+.wp-sidebar-overlay.active {
+  display: block;
 }
 
 /* ---------- Cover section ---------- */
@@ -966,7 +985,7 @@ body {
 }
 
 .problem-desc {
-  font-size:20px;
+  font-size: 20px;
   line-height: 28px;
   color: #ffffff;
   margin-bottom: 16px;
@@ -3510,6 +3529,7 @@ body {
   display: flex;
   flex-direction: column;
 }
+
 .dist-right small {
   font-size: 13px;
   color: #94a3b8;
@@ -4613,7 +4633,7 @@ body {
 
 
 .steps span span:last-child {
-  
+
   font-size: 15px;
   font-weight: 800;
   color: rgba(139, 92, 246, 0.15);
@@ -6007,6 +6027,10 @@ body {
 }
 
 @media (max-width: 1024px) {
+  .cover-heading h1 {
+    font-size: 70px;
+  }
+
   .execsum-hero {
     grid-template-columns: 1fr;
   }
@@ -6043,7 +6067,8 @@ body {
   .pillars-grid,
   .team-row,
   .adv-grid,
-  .contrib-grid {
+  .contrib-grid,
+  .wpdepin-components-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 
@@ -6051,7 +6076,8 @@ body {
     flex-wrap: wrap;
   }
 
-  .arch-layer-grid {
+  .arch-layer-grid,
+  .sol-enables-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
   }
@@ -6069,9 +6095,147 @@ body {
   .gov-three {
     grid-template-columns: repeat(1, 1fr);
   }
+
 }
 
 
-@media (max-width: 768px) {}
+@media (max-width: 768px) {
+  .navbar {
+    padding: 10px;
+    height: 80px;
+  }
 
-@media (max-width: 480px) {}
+  #nav-text {
+    flex-direction: column;
+    gap: 0px;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .hamburger img {
+    width: 40px;
+    margin: auto 0px auto 20px;
+  }
+
+  .navlogo {
+    margin-right: auto;
+  }
+
+  .wp-layout {
+    grid-template-columns: 1fr;
+    margin-top: 80px;
+    height: calc(100vh - 80px);
+
+  }
+
+  .wp-sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    z-index: 200;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+  }
+
+  .wp-sidebar.open {
+    transform: translateX(0);
+  }
+
+  .wp-content {
+    margin-left: 0;
+  }
+
+  .wpai-features-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .vyronix2,
+  .labs2 {
+    font-size: 18px;
+  }
+
+  .white-paper-name {
+    font-size: 10px;
+  }
+
+  .sections>div {
+    padding: 25px;
+  }
+
+  .cover {
+    padding: 10px;
+    background-image: url('icones/whitepaper/coverLogo2.png');
+    background-position: right 75%;
+    background-size: 90%;
+  }
+
+  .cover-heading,
+  .cover-subtitle {
+    text-align: center;
+  }
+
+  .cover-heading h1 {
+    font-size: 60px;
+  }
+
+  .cover-underline {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+  }
+
+  .cover-tags {
+    margin-top: 315px;
+  }
+
+  .content {
+    margin: 20px auto;
+  }
+
+  .opp-title-grad {
+    font-size: 40px;
+  }
+
+  .opp-metrics,
+  .opp-drivers-grid,
+  .problem-impact-grid,
+  .sol-pillars-grid,
+  .sol-enables-grid,
+  .wpweb3-feature-grid,
+  .wpweb3-stats,
+  .wpweb3-trust-grid,
+  .wpdepin-components-grid,
+  .eco-products-grid,
+  .legal-grid,
+  .legal-contact {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .sol-footer {
+    flex-direction: column;
+  }
+
+  .sol-footer-highlight {
+    width: auto;
+  }
+
+  .arch-layers-col {
+    gap: 20px;
+  }
+
+  .arch-layer-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .problem-section>div,
+  .sol-section>div,
+  .arch-section>div {
+    padding: 30px 0px;
+  }
+}

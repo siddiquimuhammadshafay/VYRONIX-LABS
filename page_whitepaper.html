@@ -30,6 +30,9 @@
         </div>
       </div>
       <div class="white-paper-name">Whitepaper 2026</div>
+      <div class="hamburger">
+        <img src="icones/hamburgerimg.png" alt="" />
+      </div>
     </nav>
 
     <!-- Whitepaper Layout -->
@@ -69,7 +72,10 @@
           </div>
         </div>
       </aside>
-      
+
+      <!-- overlay -->
+      <div class="wp-sidebar-overlay" id="wpSidebarOverlay"></div>
+
       <!-- main -->
       <main class="wp-content">
         <div class="sections">
@@ -2412,8 +2418,8 @@
               <div class="gov-left">
                 <span class="gov-badge">13.</span>
                 <h2 class="gov-title">
-                  <span class="gov-title-white">GOVERN</span>
-                  <span class="gov-title-grad">ANCE</span>
+                  <span class="gov-title-white">GOVERNANCE</span>
+                  <span class="gov-title-grad"></span>
                 </h2>
                 <div class="gov-title-rule"></div>
                 <p class="gov-sub">By the Community, For the Future</p>
@@ -3371,6 +3377,33 @@
         );
 
         sections.forEach((section) => observer.observe(section));
+        // 3. Hamburger toggles sidebar drawer on small screens
+        const hamburger = document.querySelector(".hamburger");
+        const sidebar = document.querySelector(".wp-sidebar");
+        const overlay = document.getElementById("wpSidebarOverlay");
+
+        if (hamburger && sidebar && overlay) {
+          hamburger.addEventListener("click", () => {
+            sidebar.classList.add("open");
+            overlay.classList.add("active");
+            document.body.classList.add("no-scroll");
+          });
+
+          overlay.addEventListener("click", () => {
+            sidebar.classList.remove("open");
+            overlay.classList.remove("active");
+            document.body.classList.remove("no-scroll");
+          });
+
+          // Close drawer when a nav link is clicked (mobile)
+          navLinks.forEach((link) => {
+            link.addEventListener("click", () => {
+              sidebar.classList.remove("open");
+              overlay.classList.remove("active");
+              document.body.classList.remove("no-scroll");
+            });
+          });
+        }
       });
     </script>
   </body>
