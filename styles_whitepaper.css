@@ -87,6 +87,7 @@ body {
 }
 
 /* ---------- Layout wrapper (sidebar back in normal flow) ---------- */
+/* ---------- Whitepaper Sidebar (normal, not fixed) and overall layout---------- */
 
 .wp-layout {
   width: 100%;
@@ -96,11 +97,10 @@ body {
   height: calc(100vh - 65px);
 }
 
-/* ---------- Whitepaper Sidebar (normal, not fixed) ---------- */
 .wp-content {
   height: 100%;
-  overflow-y: scroll;
-
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 
 .wp-sidebar {
@@ -110,8 +110,39 @@ body {
   border-right: 1px solid rgba(115, 60, 245, 0.15);
   padding: 24px 20px;
   height: 100%;
-  overflow-y: scroll;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
+
+/* Webkit (Chrome, Edge, Safari) */
+.wp-content::-webkit-scrollbar,
+.wp-sidebar::-webkit-scrollbar {
+  width: 6px;
+}
+
+.wp-content::-webkit-scrollbar-track,
+.wp-sidebar::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.wp-content::-webkit-scrollbar-thumb,
+.wp-sidebar::-webkit-scrollbar-thumb {
+  background: rgba(139, 92, 246, 0.4);
+  border-radius: 999px;
+}
+
+.wp-content::-webkit-scrollbar-thumb:hover,
+.wp-sidebar::-webkit-scrollbar-thumb:hover {
+  background: rgba(139, 92, 246, 0.65);
+}
+
+/* Firefox */
+.wp-content,
+.wp-sidebar {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(139, 92, 246, 0.4) transparent;
+}
+
 
 /* Nav */
 .wp-nav-wrap {
