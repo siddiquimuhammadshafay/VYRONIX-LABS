@@ -284,8 +284,8 @@ body {
 /* Heading */
 
 .cover-heading h1 {
-  font-family: "Space Grotesk", sans-serif;
-  font-size: 72px;
+  font-family: "Unbounded", sans-serif;
+  font-size: 104px;
   font-weight: 800;
   line-height: 1;
   letter-spacing: 1px;
@@ -304,7 +304,7 @@ body {
 
 .cover-grey {
   color: #cbd5e1;
-  font-size: 40px;
+  font-size: 50px !important;
   letter-spacing: 4px;
   margin-top: 6px;
 }
@@ -319,7 +319,7 @@ body {
 
 .cover-subtitle {
   color: #94a3b8;
-  font-size: 16px;
+  font-size: 20px;
   line-height: 1.6;
   margin-bottom: 28px;
   max-width: 420px;
@@ -337,7 +337,7 @@ body {
   border-radius: 20px;
   padding: 8px 16px;
   color: #60a5fa;
-  font-size: 11px;
+  font-size: 15px;
   font-weight: 700;
   letter-spacing: 0.5px;
 }
@@ -404,14 +404,14 @@ body {
 }
 
 .execsum-lead {
-  font-size: 16px;
+  font-size: 20px;
   line-height: 26px;
   color: #fff;
   margin-bottom: 16px;
 }
 
 .execsum-highlight {
-  font-size: 16px;
+  font-size: 18px;
   line-height: 26px;
   color: #94a3b8;
 }
@@ -516,14 +516,14 @@ body {
 
 .execsum-build-header h4 {
   font-family: 'Unbounded', 'Inter', sans-serif;
-  font-size: 14px;
+  font-size: 15px;
   font-weight: 700;
   color: #fff;
   margin: 0 0 4px 0;
 }
 
 .execsum-build-header p {
-  font-size: 12px;
+  font-size: 13px;
   color: #94a3b8;
   margin: 0 0 16px 0;
 }
@@ -538,6 +538,8 @@ body {
   display: flex;
   gap: 10px;
   align-items: flex-start;
+  /* margin-bottom: 5px; */
+  /* padding: ; */
 }
 
 .execsum-build-item img {
@@ -545,6 +547,8 @@ body {
   height: 16px;
   margin-top: 2px;
   flex-shrink: 0;
+  /* align-items: center; */
+  margin-top: 8px;
 }
 
 .execsum-build-item strong {
@@ -557,6 +561,7 @@ body {
 .execsum-build-item span {
   font-size: 11px;
   color: #94a3b8;
+  /* margin-bottom: 5px; */
 }
 
 /* highlights card */
@@ -570,7 +575,7 @@ body {
 
 .execsum-highlights-card h4 {
   font-family: 'Unbounded', 'Inter', sans-serif;
-  font-size: 14px;
+  font-size: 15px;
   font-weight: 700;
   color: #fff;
   margin: 0 0 16px 0;
@@ -710,7 +715,7 @@ body {
 .opp-text {
   flex: 1 1 300px;
   color: #ffffff;
-  font-size: 18px;
+  font-size: 20px;
   line-height: 30px;
   font-weight: 400;
   margin: 0;
@@ -726,7 +731,7 @@ body {
 .opp-shift-label {
   color: #00d4ff;
   font-family: 'Unbounded', 'Inter', sans-serif;
-  font-size: 12px;
+  font-size: 15px;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.05em;
@@ -777,7 +782,7 @@ body {
 .opp-metric-label {
   color: #64748b;
   font-family: 'Unbounded', 'Inter', sans-serif;
-  font-size: 10px;
+  font-size: 12px;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.08em;
@@ -786,7 +791,7 @@ body {
 .opp-metric-value {
   color: #00d4ff;
   font-family: 'Unbounded', 'Inter', sans-serif;
-  font-size: 28px;
+  font-size: 30px;
   font-weight: 700;
 }
 
@@ -796,7 +801,7 @@ body {
 
 .opp-metric-sub {
   color: #94a3b8;
-  font-size: 12px;
+  font-size: 14px;
 }
 
 .opp-metric-graph {
@@ -886,14 +891,14 @@ body {
 .opp-driver-card h4 {
   color: #ffffff;
   font-family: 'Unbounded', 'Inter', sans-serif;
-  font-size: 12px;
+  font-size: 20px;
   font-weight: 700;
   margin: 0;
 }
 
 .opp-driver-card p {
   color: #94a3b8;
-  font-size: 13px;
+  font-size: 15px;
   line-height: 20px;
   margin: 0;
 }
@@ -961,14 +966,14 @@ body {
 }
 
 .problem-desc {
-  font-size: 17px;
+  font-size:20px;
   line-height: 28px;
   color: #ffffff;
   margin-bottom: 16px;
 }
 
 .problem-highlight {
-  font-size: 17px;
+  font-size: 18px;
   line-height: 28px;
   color: #94a3b8;
 }
@@ -994,7 +999,7 @@ body {
   padding: 16px;
   display: flex;
   gap: 16px;
-  align-items: flex-start;
+  align-items: center;
   transition: border-color 0.2s;
 }
 
@@ -1015,6 +1020,7 @@ body {
 }
 
 .problem-issue-icon img {
+  /* align-self: center; */
   width: 16px;
   height: 16px;
 }
@@ -1026,7 +1032,7 @@ body {
 .problem-issue-content h4 {
   color: #ffffff;
   font-family: 'Unbounded', 'Inter', sans-serif;
-  font-size: 11px;
+  font-size: 20px;
   font-weight: 700;
   letter-spacing: 0.04em;
   margin: 0 0 4px 0;
@@ -1034,7 +1040,7 @@ body {
 
 .problem-issue-content p {
   color: #94a3b8;
-  font-size: 12px;
+  font-size: 15px;
   line-height: 18px;
   margin: 0;
 }
@@ -1049,7 +1055,7 @@ body {
 .problem-impact-heading {
   color: #00ceff;
   font-family: 'Unbounded', 'Inter', sans-serif;
-  font-size: 14px;
+  font-size: 20px;
   font-weight: 700;
   letter-spacing: 0.08em;
   margin: 0;
@@ -1095,21 +1101,22 @@ body {
 .problem-impact-text h4 {
   color: #ffffff;
   font-family: 'Unbounded', 'Inter', sans-serif;
-  font-size: 10px;
+  font-size: 15px;
   font-weight: 700;
   margin: 0 0 4px 0;
 }
 
 .problem-impact-text p {
   color: #94a3b8;
-  font-size: 11px;
+  font-size: 13px;
   line-height: 16px;
   margin: 0;
 }
 
 /* ---------- STATS + CALLOUT ---------- */
 .problem-stats-callout {
-  background-color: #000000;
+  border-top: 1px solid #00ceff;
+  background-color: rgba(3, 13, 32, 0.6);
   width: 100%;
   margin-top: 10px;
   display: flex;
@@ -1231,7 +1238,7 @@ body {
 }
 
 .sol-lead {
-  font-size: 18px;
+  font-size: 20px;
   line-height: 28px;
   font-weight: 600;
   color: #fff;
@@ -1255,7 +1262,7 @@ body {
 .sol-approach-label {
   color: #00d4ff;
   font-family: 'Unbounded', 'Inter', sans-serif;
-  font-size: 11px;
+  font-size: 15px;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.06em;
@@ -1390,7 +1397,7 @@ body {
 .sol-pillars-head {
   color: #00d4ff;
   font-family: 'Unbounded', 'Inter', sans-serif;
-  font-size: 14px;
+  font-size: 20px;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.06em;
@@ -1434,7 +1441,7 @@ body {
 
 .sol-pillar-card h4 {
   font-family: 'Unbounded', 'Inter', sans-serif;
-  font-size: 14px;
+  font-size: 15px;
   line-height: 20px;
   font-weight: 700;
   color: #fff;
@@ -1456,7 +1463,7 @@ body {
 .sol-enables-head {
   color: #00d4ff;
   font-family: 'Unbounded', 'Inter', sans-serif;
-  font-size: 14px;
+  font-size: 20px;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.06em;
@@ -1486,12 +1493,12 @@ body {
 }
 
 .sol-enable-item img {
-  width: 16px;
-  height: 16px;
+  width: 20px;
+  height: 20px;
 }
 
 .sol-enable-item span {
-  font-size: 13px;
+  font-size: 15px;
   line-height: 18px;
   font-weight: 600;
   color: #fff;
@@ -1633,14 +1640,14 @@ body {
 }
 
 .arch-lead {
-  font-size: 16px;
+  font-size: 20px;
   line-height: 1.6;
   font-weight: 600;
   color: #fff;
 }
 
 .arch-desc {
-  font-size: 14px;
+  font-size: 15px;
   line-height: 1.5;
   color: #94a3b8;
   margin-top: 8px;
@@ -1663,7 +1670,7 @@ body {
   align-items: center;
   gap: 8px;
   font-weight: 700;
-  font-size: 11px;
+  font-size: 15px;
   border: 1px solid rgba(0, 212, 255, 0.25);
 }
 
@@ -1704,7 +1711,7 @@ body {
 .arch-benefits-head {
   color: #00d4ff;
   font-family: 'Unbounded', 'Inter', sans-serif;
-  font-size: 11px;
+  font-size: 20px;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.06em;
@@ -1739,13 +1746,13 @@ body {
 
 .arch-benefit-item strong {
   color: #fff;
-  font-size: 14px;
+  font-size: 15px;
   font-weight: 700;
 }
 
 .arch-benefit-item span {
   color: #94a3b8;
-  font-size: 11px;
+  font-size: 13px;
   line-height: 1.4;
 }
 
@@ -1786,7 +1793,7 @@ body {
 
 .arch-layer-card h5 {
   font-family: 'Unbounded', 'Inter', sans-serif;
-  font-size: 11px;
+  font-size: 20px;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.06em;
@@ -1826,18 +1833,18 @@ body {
 }
 
 .arch-layer-item img {
-  width: 20px;
-  height: 20px;
+  width: 24px;
+  height: 24px;
 }
 
 .arch-layer-item span {
-  font-size: 11px;
+  font-size: 15px;
   font-weight: 700;
   color: #fff;
 }
 
 .arch-layer-item small {
-  font-size: 9px;
+  font-size: 12px;
   color: #64748b;
 }
 
@@ -1853,7 +1860,7 @@ body {
 .arch-outputs-col h5 {
   color: #00d4ff;
   font-family: 'Unbounded', 'Inter', sans-serif;
-  font-size: 11px;
+  font-size: 20px;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.06em;
@@ -1865,7 +1872,7 @@ body {
   border-radius: 8px;
   border: 1px solid rgba(139, 92, 246, 0.12);
   padding: 12px 14px;
-  font-size: 14px;
+  font-size: 15px;
   font-weight: 600;
   color: #fff;
 }
@@ -1878,7 +1885,7 @@ body {
 }
 
 .arch-output-quote p {
-  font-size: 11px;
+  font-size: 13px;
   line-height: 1.5;
   font-weight: 700;
   color: #fff;
@@ -1886,7 +1893,7 @@ body {
 }
 
 .arch-output-quote span {
-  font-size: 11px;
+  font-size: 13px;
   color: #00d4ff;
 }
 
@@ -1901,7 +1908,7 @@ body {
 .arch-flow-head {
   color: #00d4ff;
   font-family: 'Unbounded', 'Inter', sans-serif;
-  font-size: 11px;
+  font-size: 20px;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.06em;
@@ -1928,7 +1935,7 @@ body {
   border-radius: 8px;
   border: 1px solid rgba(139, 92, 246, 0.12);
   padding: 6px 14px;
-  font-size: 11px;
+  font-size: 15px;
   font-weight: 600;
   color: #fff;
   white-space: nowrap;
@@ -1936,7 +1943,7 @@ body {
 
 .arch-arrow {
   color: #64748b;
-  font-size: 14px;
+  font-size: 15px;
 }
 
 .arch-value-loop-badge {
@@ -1989,7 +1996,7 @@ body {
 }
 
 .arch-glance span {
-  font-size: 10px;
+  font-size: 11px;
   font-weight: 600;
   text-transform: uppercase;
   color: #94a3b8;
@@ -2071,14 +2078,14 @@ body {
 }
 
 .wpai-hero-sub {
-  font-size: 17px;
+  font-size: 20px;
   line-height: 28px;
   font-weight: 600;
   color: #fff;
 }
 
 .wpai-hero-desc {
-  font-size: 16px;
+  font-size: 18px;
   line-height: 26px;
   color: #94a3b8;
   margin-top: 8px;
@@ -2096,7 +2103,7 @@ body {
 .wpai-metrics h5 {
   color: #00d4ff;
   font-family: 'Unbounded', 'Inter', sans-serif;
-  font-size: 12px;
+  font-size: 20px;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.06em;
@@ -2127,12 +2134,12 @@ body {
 }
 
 .wpai-cap-item strong {
-  font-size: 11px;
+  font-size: 15px;
   color: #fff;
 }
 
 .wpai-cap-item span {
-  font-size: 9px;
+  font-size: 13px;
   color: #64748b;
 }
 
@@ -2158,7 +2165,7 @@ body {
 }
 
 .wpai-metric small {
-  font-size: 11px;
+  font-size: 13px;
   text-transform: uppercase;
   letter-spacing: 0.04em;
   color: #94a3b8;
@@ -2171,7 +2178,7 @@ body {
 .wpai-how-works h5 {
   color: #00d4ff;
   font-family: 'Unbounded', 'Inter', sans-serif;
-  font-size: 12px;
+  font-size: 20px;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.06em;
@@ -2198,20 +2205,20 @@ body {
 .wpai-step span {
   display: block;
   font-family: 'Unbounded', 'Inter', sans-serif;
-  font-size: 14px;
+  font-size: 18px;
   font-weight: 700;
   color: #00d4ff;
 }
 
 .wpai-step strong {
   display: block;
-  font-size: 13px;
+  font-size: 15px;
   font-weight: 700;
   color: #fff;
 }
 
 .wpai-step small {
-  font-size: 10px;
+  font-size: 13px;
   color: #64748b;
 }
 
@@ -2228,7 +2235,7 @@ body {
 .wpai-features h5 {
   color: #00d4ff;
   font-family: 'Unbounded', 'Inter', sans-serif;
-  font-size: 12px;
+  font-size: 20px;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.06em;
@@ -2259,14 +2266,14 @@ body {
 
 .wpai-feature-card h6 {
   font-family: 'Unbounded', 'Inter', sans-serif;
-  font-size: 12px;
+  font-size: 15px;
   font-weight: 700;
   color: #fff;
   margin: 0 0 4px 0;
 }
 
 .wpai-feature-card p {
-  font-size: 12px;
+  font-size: 13px;
   line-height: 18px;
   color: #94a3b8;
   margin: 0;
@@ -2309,7 +2316,7 @@ body {
 
 .wpai-cta-box p {
   font-family: 'Unbounded', 'Inter', sans-serif;
-  font-size: 11px;
+  font-size: 13px;
   line-height: 18px;
   font-weight: 700;
   color: #fff;
@@ -2388,14 +2395,14 @@ body {
 }
 
 .wpweb3-sub {
-  font-size: 17px;
+  font-size: 20px;
   line-height: 28px;
   font-weight: 600;
   color: #fff;
 }
 
 .wpweb3-desc {
-  font-size: 16px;
+  font-size: 18px;
   line-height: 26px;
   color: #94a3b8;
   margin: 4px 0 12px 0;
@@ -2404,7 +2411,7 @@ body {
 .wpweb3-features h5 {
   color: #00d4ff;
   font-family: 'Unbounded', 'Inter', sans-serif;
-  font-size: 11px;
+  font-size: 20px;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.06em;
@@ -2444,13 +2451,13 @@ body {
 }
 
 .wpweb3-feature-card strong {
-  font-size: 14px;
+  font-size: 15px;
   font-weight: 700;
   color: #fff;
 }
 
 .wpweb3-feature-card span {
-  font-size: 12px;
+  font-size: 13px;
   line-height: 18px;
   color: #94a3b8;
 }
@@ -2459,7 +2466,7 @@ body {
   background: #05070f;
   border-top: 1px solid rgba(139, 92, 246, 0.12);
   border-bottom: 1px solid rgba(139, 92, 246, 0.12);
-  padding: 12px 0;
+  padding: 12px 20px;
   margin: 12px 0;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -2479,7 +2486,7 @@ body {
 }
 
 .wpweb3-stat small {
-  font-size: 11px;
+  font-size: 13px;
   text-transform: uppercase;
   letter-spacing: 0.04em;
   color: #94a3b8;
@@ -2492,7 +2499,7 @@ body {
 .wpweb3-governance h5 {
   color: #00d4ff;
   font-family: 'Unbounded', 'Inter', sans-serif;
-  font-size: 11px;
+  font-size: 20px;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.06em;
@@ -2526,13 +2533,13 @@ body {
 
 .wpweb3-step strong {
   display: block;
-  font-size: 13px;
+  font-size: 15px;
   font-weight: 700;
   color: #fff;
 }
 
 .wpweb3-step small {
-  font-size: 10px;
+  font-size: 12px;
   color: #64748b;
 }
 
@@ -2549,7 +2556,7 @@ body {
 .wpweb3-trust h5 {
   color: #00d4ff;
   font-family: 'Unbounded', 'Inter', sans-serif;
-  font-size: 11px;
+  font-size: 20px;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.06em;
@@ -2590,7 +2597,7 @@ body {
 
 .wpweb3-trust-card h6 {
   font-family: 'Unbounded', 'Inter', sans-serif;
-  font-size: 12px;
+  font-size: 15px;
   font-weight: 700;
   color: #fff;
   text-transform: uppercase;
@@ -2599,7 +2606,7 @@ body {
 }
 
 .wpweb3-trust-card p {
-  font-size: 12px;
+  font-size: 13px;
   line-height: 18px;
   color: #94a3b8;
   margin: 0;
@@ -2715,14 +2722,14 @@ body {
 }
 
 .wpdepin-sub {
-  font-size: 17px;
+  font-size: 20px;
   line-height: 1.6;
   font-weight: 600;
   color: #fff;
 }
 
 .wpdepin-desc {
-  font-size: 16px;
+  font-size: 18px;
   line-height: 1.6;
   color: #94a3b8;
   margin: 8px 0 12px 0;
@@ -2747,13 +2754,13 @@ body {
 
 .wpdepin-stat-item span {
   font-family: 'Unbounded', 'Inter', sans-serif;
-  font-size: 14px;
+  font-size: 15px;
   font-weight: 700;
   color: #00e5cc;
 }
 
 .wpdepin-stat-item small {
-  font-size: 12px;
+  font-size: 13px;
   color: #64748b;
 }
 
@@ -2774,7 +2781,7 @@ body {
 .wpdepin-right h5 {
   color: #00d4ff;
   font-family: 'Unbounded', 'Inter', sans-serif;
-  font-size: 11px;
+  font-size: 20px;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.06em;
@@ -2801,7 +2808,7 @@ body {
   display: flex;
   align-items: center;
   gap: 10px;
-  font-size: 13px;
+  font-size: 15px;
   font-weight: 600;
   color: #fff;
 }
@@ -2821,7 +2828,7 @@ body {
 .wpdepin-components h5 {
   color: #00d4ff;
   font-family: 'Unbounded', 'Inter', sans-serif;
-  font-size: 11px;
+  font-size: 20px;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.06em;
@@ -2851,7 +2858,7 @@ body {
 
 .wpdepin-comp-card strong {
   font-family: 'Unbounded', 'Inter', sans-serif;
-  font-size: 11px;
+  font-size: 15px;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.04em;
@@ -2867,7 +2874,7 @@ body {
 .wpdepin-journey h5 {
   color: #00d4ff;
   font-family: 'Unbounded', 'Inter', sans-serif;
-  font-size: 11px;
+  font-size: 20px;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.06em;
@@ -2894,20 +2901,20 @@ body {
 .wpdepin-step span {
   display: block;
   font-family: 'Unbounded', 'Inter', sans-serif;
-  font-size: 14px;
+  font-size: 18px;
   font-weight: 700;
   color: #00e5cc;
 }
 
 .wpdepin-step strong {
   display: block;
-  font-size: 13px;
+  font-size: 15px;
   font-weight: 700;
   color: #fff;
 }
 
 .wpdepin-step small {
-  font-size: 10px;
+  font-size: 13px;
   color: #64748b;
 }
 
@@ -2962,7 +2969,7 @@ body {
 .wpdepin-impact-box h5 {
   color: #00d4ff;
   font-family: 'Unbounded', 'Inter', sans-serif;
-  font-size: 11px;
+  font-size: 20px;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.06em;
@@ -2973,7 +2980,7 @@ body {
   display: flex;
   align-items: flex-start;
   gap: 10px;
-  font-size: 13px;
+  font-size: 15px;
   line-height: 1.5;
   color: #94a3b8;
   margin-bottom: 10px;
@@ -3052,14 +3059,14 @@ body {
 }
 
 .eco-sub {
-  font-size: 17px;
+  font-size: 20px;
   line-height: 1.6;
   font-weight: 600;
   color: #fff;
 }
 
 .eco-desc {
-  font-size: 16px;
+  font-size: 18px;
   line-height: 1.6;
   color: #94a3b8;
   margin: 8px 0 0 0;
@@ -3069,7 +3076,7 @@ body {
 .eco-products h5 {
   color: #00d4ff;
   font-family: 'Unbounded', 'Inter', sans-serif;
-  font-size: 11px;
+  font-size: 20px;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.06em;
@@ -3101,7 +3108,7 @@ body {
 .eco-product-card strong {
   display: block;
   font-family: 'Unbounded', 'Inter', sans-serif;
-  font-size: 11px;
+  font-size: 15px;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.04em;
@@ -3122,7 +3129,7 @@ body {
 .eco-integrations h5 {
   color: #00d4ff;
   font-family: 'Unbounded', 'Inter', sans-serif;
-  font-size: 11px;
+  font-size: 20px;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.06em;
@@ -3160,7 +3167,7 @@ body {
 .eco-participate h5 {
   color: #00d4ff;
   font-family: 'Unbounded', 'Inter', sans-serif;
-  font-size: 11px;
+  font-size: 15px;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.06em;
@@ -3185,7 +3192,7 @@ body {
 
 .eco-step span {
   font-family: 'Unbounded', 'Inter', sans-serif;
-  font-size: 14px;
+  font-size: 15px;
   font-weight: 700;
   color: #00d4ff;
   flex-shrink: 0;
@@ -3193,13 +3200,13 @@ body {
 
 .eco-step strong {
   display: block;
-  font-size: 13px;
+  font-size: 15px;
   font-weight: 700;
   color: #fff;
 }
 
 .eco-step small {
-  font-size: 10px;
+  font-size: 13px;
   color: #64748b;
 }
 
@@ -3328,14 +3335,14 @@ body {
 }
 
 .toko-sub {
-  font-size: 17px;
+  font-size: 20px;
   line-height: 1.6;
   font-weight: 600;
   color: #fff;
 }
 
 .toko-desc {
-  font-size: 16px;
+  font-size: 18px;
   line-height: 1.6;
   color: #94a3b8;
   margin: 8px 0 0 0;
@@ -3352,7 +3359,7 @@ body {
 .toko-details h5 {
   color: #00d4ff;
   font-family: 'Unbounded', 'Inter', sans-serif;
-  font-size: 11px;
+  font-size: 20px;
   font-weight: 700;
   letter-spacing: 0.06em;
   margin: 0 0 12px 0;
@@ -3370,12 +3377,12 @@ body {
 }
 
 .detail-row span {
-  font-size: 13px;
+  font-size: 15px;
   color: #94a3b8;
 }
 
 .detail-row strong {
-  font-size: 14px;
+  font-size: 15px;
   font-weight: 600;
   color: #fff;
 }
@@ -3388,7 +3395,7 @@ body {
 .toko-distribution h5 {
   color: #f59e0b;
   font-family: 'Unbounded', 'Inter', sans-serif;
-  font-size: 11px;
+  font-size: 18px;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.06em;
@@ -3499,6 +3506,10 @@ body {
   gap: 12px;
 }
 
+.dist-right div {
+  display: flex;
+  flex-direction: column;
+}
 .dist-right small {
   font-size: 13px;
   color: #94a3b8;
@@ -3551,7 +3562,7 @@ body {
 .toko-utility h5 {
   color: #f59e0b;
   font-family: 'Unbounded', 'Inter', sans-serif;
-  font-size: 11px;
+  font-size: 18px;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.06em;
@@ -3573,7 +3584,7 @@ body {
 
 .util-card h6 {
   font-family: 'Unbounded', 'Inter', sans-serif;
-  font-size: 12px;
+  font-size: 15px;
   font-weight: 700;
   text-transform: uppercase;
   color: #f59e0b;
@@ -3588,7 +3599,7 @@ body {
 }
 
 .util-card p {
-  font-size: 14px;
+  font-size: 13px;
   line-height: 1.5;
   color: #94a3b8;
   margin: 0;
@@ -3602,7 +3613,7 @@ body {
 .toko-vesting h5 {
   color: #f59e0b;
   font-family: 'Unbounded', 'Inter', sans-serif;
-  font-size: 11px;
+  font-size: 18px;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.06em;
@@ -3616,7 +3627,7 @@ body {
 }
 
 .vest-card {
-  background: #05070f;
+  background: black;
   border-radius: 12px;
   border: 1px solid rgba(139, 92, 246, 0.12);
   padding: 12px 16px;
@@ -3629,21 +3640,21 @@ body {
 }
 
 .vest-card span {
-  font-size: 14px;
+  font-size: 15px;
   font-weight: 700;
   color: #fff;
 }
 
 .vest-card strong {
   font-family: 'Unbounded', 'Inter', sans-serif;
-  font-size: 11px;
+  font-size: 13px;
   font-weight: 700;
   color: #f59e0b;
 }
 
 .vest-card small {
   display: block;
-  font-size: 12px;
+  font-size: 13px;
   line-height: 1.4;
   color: #94a3b8;
   margin-top: 8px;
@@ -3651,11 +3662,12 @@ body {
 
 /* bottom stats */
 .toko-stats {
-  background: #05070f;
+  background: black;
   border-radius: 16px;
   border: 1px solid rgba(139, 92, 246, 0.12);
   padding: 12px 24px;
   display: flex;
+  justify-content: space-between;
   flex-wrap: wrap;
   align-items: center;
   gap: 16px 24px;
@@ -3734,6 +3746,7 @@ body {
 
 .roadmap-badge {
   color: #00d4ff;
+  /* border: none; */
   font-family: 'Unbounded', 'Inter', sans-serif;
   font-size: 20px;
   font-weight: 700;
@@ -3768,14 +3781,14 @@ body {
 }
 
 .roadmap-sub {
-  font-size: 17px;
+  font-size: 20px;
   line-height: 1.6;
   font-weight: 600;
   color: #fff;
 }
 
 .roadmap-desc {
-  font-size: 16px;
+  font-size: 18px;
   line-height: 1.6;
   color: #94a3b8;
   margin: 8px 0 0 0;
@@ -3820,7 +3833,7 @@ body {
 .roadmap-phases h5 {
   color: #00d4ff;
   font-family: 'Unbounded', 'Inter', sans-serif;
-  font-size: 11px;
+  font-size: 20px;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.06em;
@@ -3870,7 +3883,7 @@ body {
 
 .phase-header span:first-child {
   font-family: 'Unbounded', 'Inter', sans-serif;
-  font-size: 14px;
+  font-size: 15px;
   font-weight: 700;
 }
 
@@ -3891,7 +3904,7 @@ body {
 }
 
 .roadmap-badge {
-  font-size: 8px;
+  font-size: 10px;
   font-weight: 700;
   text-transform: uppercase;
   padding: 4px 8px;
@@ -3925,7 +3938,7 @@ body {
 
 .phase-card h6 {
   font-family: 'Unbounded', 'Inter', sans-serif;
-  font-size: 13px;
+  font-size: 15px;
   font-weight: 700;
   color: #fff;
   margin: 8px 0 8px 0;
@@ -3941,7 +3954,7 @@ body {
   display: flex;
   align-items: flex-start;
   gap: 8px;
-  font-size: 11px;
+  font-size: 13px;
   line-height: 1.4;
   color: #94a3b8;
   padding: 3px 0;
@@ -3983,7 +3996,7 @@ body {
 .roadmap-timeline h5 {
   color: #00d4ff;
   font-family: 'Unbounded', 'Inter', sans-serif;
-  font-size: 11px;
+  font-size: 20px;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.06em;
@@ -4083,7 +4096,7 @@ body {
   padding: 6px 14px;
   border-radius: 999px;
   font-family: 'Unbounded', 'Inter', sans-serif;
-  font-size: 9px;
+  font-size: 13px;
   font-weight: 700;
   text-transform: uppercase;
 }
@@ -4186,14 +4199,14 @@ body {
 }
 
 .gov-sub {
-  font-size: 17px;
+  font-size: 20px;
   line-height: 28px;
   font-weight: 600;
   color: #fff;
 }
 
 .gov-desc {
-  font-size: 16px;
+  font-size: 18px;
   line-height: 26px;
   color: #94a3b8;
   margin: 8px 0 12px 0;
@@ -4230,7 +4243,7 @@ body {
 .gov-right h5 {
   color: #7b2fbe;
   font-family: 'Unbounded', 'Inter', sans-serif;
-  font-size: 11px;
+  font-size: 18px;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.06em;
@@ -4266,7 +4279,7 @@ body {
   align-items: center;
   justify-content: center;
   font-family: 'Unbounded', 'Inter', sans-serif;
-  font-size: 8px;
+  font-size: 10px;
   font-weight: 700;
   color: #94a3b8;
   text-align: center;
@@ -4340,7 +4353,7 @@ body {
 .gov-how h5 {
   color: #7b2fbe;
   font-family: 'Unbounded', 'Inter', sans-serif;
-  font-size: 11px;
+  font-size: 18px;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.06em;
@@ -4371,7 +4384,7 @@ body {
 
 .step-item strong {
   display: block;
-  font-size: 14px;
+  font-size: 15px;
   font-weight: 700;
   color: #fff;
 }
@@ -4405,7 +4418,7 @@ body {
 
 .col h5 {
   font-family: 'Unbounded', 'Inter', sans-serif;
-  font-size: 11px;
+  font-size: 15px;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.06em;
@@ -4568,7 +4581,7 @@ body {
 .lifecycle h5 {
   color: #7b2fbe;
   font-family: 'Unbounded', 'Inter', sans-serif;
-  font-size: 11px;
+  font-size: 15px;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.06em;
@@ -4593,12 +4606,16 @@ body {
 
 .steps span span:first-child {
   font-family: 'Unbounded', 'Inter', sans-serif;
-  font-size: 10px;
+  font-size: 13px;
   font-weight: 800;
   color: #7b2fbe;
 }
 
-.steps .sep {
+
+.steps span span:last-child {
+  
+  font-size: 15px;
+  font-weight: 800;
   color: rgba(139, 92, 246, 0.15);
 }
 
@@ -4716,14 +4733,14 @@ body {
 }
 
 .sec-sub {
-  font-size: 17px;
+  font-size: 20px;
   line-height: 28px;
   font-weight: 600;
   color: #fff;
 }
 
 .sec-desc {
-  font-size: 16px;
+  font-size: 18px;
   line-height: 26px;
   color: #94a3b8;
   margin: 8px 0 0 0;
@@ -4741,7 +4758,7 @@ body {
 .sec-right h5 {
   color: #3b82f6;
   font-family: 'Unbounded', 'Inter', sans-serif;
-  font-size: 11px;
+  font-size: 18px;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.06em;
@@ -4784,7 +4801,7 @@ body {
 .layer span {
   display: block;
   font-family: 'Unbounded', 'Inter', sans-serif;
-  font-size: 10px;
+  font-size: 13px;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.04em;
@@ -4823,7 +4840,7 @@ body {
 .sec-pillars h5 {
   color: #3b82f6;
   font-family: 'Unbounded', 'Inter', sans-serif;
-  font-size: 11px;
+  font-size: 18px;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.06em;
@@ -4861,14 +4878,14 @@ body {
 
 .pillar h6 {
   font-family: 'Unbounded', 'Inter', sans-serif;
-  font-size: 13px;
+  font-size: 15px;
   font-weight: 700;
   color: #fff;
   margin: 0 0 8px 0;
 }
 
 .pillar p {
-  font-size: 12px;
+  font-size: 13px;
   line-height: 18px;
   color: #94a3b8;
   margin: 0;
@@ -4889,7 +4906,7 @@ body {
 .sec-features h5 {
   color: #3b82f6;
   font-family: 'Unbounded', 'Inter', sans-serif;
-  font-size: 11px;
+  font-size: 18px;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.06em;
@@ -4932,14 +4949,14 @@ body {
 .feature-item strong {
   display: inline;
   font-family: 'Unbounded', 'Inter', sans-serif;
-  font-size: 11px;
+  font-size: 15px;
   font-weight: 700;
   color: #fff;
 }
 
 .feature-item small {
   display: block;
-  font-size: 11px;
+  font-size: 13px;
   color: #94a3b8;
   margin-top: 4px;
 }
@@ -4952,7 +4969,7 @@ body {
 .sec-audits h5 {
   color: #3b82f6;
   font-family: 'Unbounded', 'Inter', sans-serif;
-  font-size: 11px;
+  font-size: 18px;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.06em;
@@ -4979,13 +4996,13 @@ body {
 }
 
 .audit-item span:first-child {
-  font-size: 13px;
+  font-size: 15px;
   color: #94a3b8;
 }
 
 .sec-badge {
   font-family: 'Unbounded', 'Inter', sans-serif;
-  font-size: 8px;
+  font-size: 10px;
   font-weight: 700;
   text-transform: uppercase;
   padding: 4px 8px;
@@ -5018,7 +5035,7 @@ body {
 .compliance h6 {
   color: #64748b;
   font-family: 'Unbounded', 'Inter', sans-serif;
-  font-size: 11px;
+  font-size: 18px;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.06em;
@@ -5037,7 +5054,7 @@ body {
   border: 1px solid rgba(139, 92, 246, 0.12);
   padding: 6px 10px;
   font-family: 'Unbounded', 'Inter', sans-serif;
-  font-size: 9px;
+  font-size: 10px;
   font-weight: 700;
   color: #64748b;
 }
@@ -5064,7 +5081,7 @@ body {
 }
 
 .trust-card p {
-  font-size: 14px;
+  font-size: 15px;
   line-height: 22px;
   color: #94a3b8;
   max-width: 800px;
@@ -5141,14 +5158,14 @@ body {
 }
 
 .team-sub {
-  font-size: 17px;
+  font-size: 20px;
   line-height: 28px;
   font-weight: 600;
   color: #fff;
 }
 
 .team-desc {
-  font-size: 16px;
+  font-size: 18px;
   line-height: 26px;
   color: #94a3b8;
   margin: 8px 0 0 0;
@@ -5178,7 +5195,7 @@ body {
 }
 
 .team-stat-card small {
-  font-size: 12px;
+  font-size: 15px;
   font-weight: 500;
   color: #94a3b8;
 }
@@ -5191,7 +5208,7 @@ body {
 .team-core h5 {
   color: #00d4ff;
   font-family: 'Unbounded', 'Inter', sans-serif;
-  font-size: 11px;
+  font-size: 20px;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.06em;
@@ -5297,7 +5314,7 @@ body {
 .member-card .team-role {
   display: block;
   font-family: 'Unbounded', 'Inter', sans-serif;
-  font-size: 10px;
+  font-size: 15px;
   font-weight: 700;
   text-transform: uppercase;
   color: #00d4ff;
@@ -5305,7 +5322,7 @@ body {
 }
 
 .member-card p {
-  font-size: 12px;
+  font-size: 13px;
   line-height: 1.4;
   color: #94a3b8;
   margin: 0;
@@ -5337,7 +5354,7 @@ body {
 
 .panel h5 {
   font-family: 'Unbounded', 'Inter', sans-serif;
-  font-size: 11px;
+  font-size: 18px;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.06em;
@@ -5379,7 +5396,7 @@ body {
 }
 
 .panel.hiring p {
-  font-size: 14px;
+  font-size: 15px;
   color: #94a3b8;
   margin: 0 0 16px 0;
 }
@@ -5396,7 +5413,7 @@ body {
   border: 1px solid rgba(245, 158, 11, 0.2);
   padding: 6px 12px;
   font-family: 'Unbounded', 'Inter', sans-serif;
-  font-size: 10px;
+  font-size: 13px;
   font-weight: 700;
   color: #f59e0b;
 }
@@ -5496,14 +5513,14 @@ body {
 }
 
 .adv-sub {
-  font-size: 17px;
+  font-size: 20px;
   line-height: 28px;
   font-weight: 600;
   color: #fff;
 }
 
 .adv-desc {
-  font-size: 16px;
+  font-size: 18px;
   line-height: 26px;
   color: #94a3b8;
   margin: 8px 0 0 0;
@@ -5533,7 +5550,7 @@ body {
 }
 
 .adv-stat-card small {
-  font-size: 12px;
+  font-size: 15px;
   font-weight: 500;
   color: #94a3b8;
 }
@@ -5546,7 +5563,7 @@ body {
 .adv-board h5 {
   color: #f59e0b;
   font-family: 'Unbounded', 'Inter', sans-serif;
-  font-size: 11px;
+  font-size: 20px;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.06em;
@@ -5605,7 +5622,7 @@ body {
 }
 
 .advisor-card h6 {
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 700;
   color: #fff;
   margin: 0 0 2px 0;
@@ -5614,7 +5631,7 @@ body {
 .advisor-card .adv-role {
   display: block;
   font-family: 'Unbounded', 'Inter', sans-serif;
-  font-size: 9px;
+  font-size: 15px;
   font-weight: 700;
   text-transform: uppercase;
   color: #f59e0b;
@@ -5643,7 +5660,7 @@ body {
 .adv-contributions h5 {
   color: #f59e0b;
   font-family: 'Unbounded', 'Inter', sans-serif;
-  font-size: 11px;
+  font-size: 18px;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.06em;
@@ -5681,7 +5698,7 @@ body {
 
 .contrib-card h6 {
   font-family: 'Unbounded', 'Inter', sans-serif;
-  font-size: 13px;
+  font-size: 15px;
   font-weight: 700;
   color: #fff;
   margin: 0 0 8px 0;
@@ -5782,14 +5799,14 @@ body {
 }
 
 .legal-sub {
-  font-size: 17px;
+  font-size: 20px;
   line-height: 28px;
   font-weight: 600;
   color: #fff;
 }
 
 .legal-version {
-  font-size: 12px;
+  font-size: 15px;
   font-weight: 500;
   text-transform: uppercase;
   letter-spacing: 0.04em;
@@ -5820,7 +5837,7 @@ body {
 
 .legal-card h6 {
   font-family: 'Unbounded', 'Inter', sans-serif;
-  font-size: 11px;
+  font-size: 15px;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.06em;
@@ -5829,7 +5846,7 @@ body {
 }
 
 .legal-card p {
-  font-size: 12px;
+  font-size: 13px;
   line-height: 20px;
   color: #94a3b8;
   margin: 0;
@@ -5869,7 +5886,7 @@ body {
 
 .contact-box h6 {
   font-family: 'Unbounded', 'Inter', sans-serif;
-  font-size: 10px;
+  font-size: 15px;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.08em;
