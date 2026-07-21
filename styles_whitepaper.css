@@ -255,7 +255,7 @@ body {
   display: flex;
   align-items: center;
   padding: 60px;
-  background-image: url("icones/whitepaper/coverLogo.png");
+  background-image: url("icones/whitepaper/coverLogo.webp");
   background-repeat: no-repeat;
   background-position: center right;
   background-size: contain;
@@ -367,7 +367,7 @@ body {
   padding: 40px 40px 0px 40px;
   color: #fff;
   font-family: 'Outfit', 'Inter', sans-serif;
-  background-image: url('icones/whitepaper/background.png');
+  background-image: url('icones/whitepaper/background.webp');
   background-position: center center;
   background-repeat: no-repeat;
   background-size: 100% 100%;
@@ -391,7 +391,7 @@ body {
 .execsum-badge {
   color: #a855f7;
   font-family: 'Unbounded', 'Inter', sans-serif;
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 700;
 }
 
@@ -1198,7 +1198,7 @@ body {
 .sol-section {
   color: #fff;
   font-family: 'Outfit', 'Inter', sans-serif;
-  background-image: url('icones/whitepaper/background.png');
+  background-image: url('icones/whitepaper/background.webp');
   background-position: center center;
   background-repeat: no-repeat;
   background-size: 100% 100%;
@@ -1336,7 +1336,7 @@ body {
   margin-top: 8px;
   width: 100%;
   overflow: visible;
-  background-image: url('icones/whitepaper/solution-globe.png');
+  background-image: url('icones/whitepaper/solution-globe.webp');
   background-position: center center;
   background-repeat: no-repeat;
 }
@@ -3924,12 +3924,12 @@ body {
 }
 
 .roadmap-badge {
-  font-size: 10px;
+  font-size: 20px;
   font-weight: 700;
   text-transform: uppercase;
   padding: 4px 8px;
-  border-radius: 4px;
-  border: 1px solid;
+  /* border-radius: 4px; */
+  /* border: 1px solid; */
 }
 
 .roadmap-badge.complete {
@@ -4643,7 +4643,7 @@ body {
   display: flex;
   align-items: center;
   gap: 8px;
-  font-size: 13px;
+  font-size: 20px;
   font-weight: 700;
   color: #fff;
   padding-top: 8px;
@@ -5022,7 +5022,7 @@ body {
 
 .sec-badge {
   font-family: 'Unbounded', 'Inter', sans-serif;
-  font-size: 10px;
+  font-size: 20px;
   font-weight: 700;
   text-transform: uppercase;
   padding: 4px 8px;
@@ -6161,6 +6161,11 @@ body {
   }
 
   .white-paper-name {
+    border: 1px solid #22d3ee;
+  border-radius: 6px;
+  margin-left: 20px;
+  padding: 5px 8px;
+    text-align: center;
     font-size: 10px;
   }
 
@@ -6170,7 +6175,7 @@ body {
 
   .cover {
     padding: 10px;
-    background-image: url('icones/whitepaper/coverLogo2.png');
+    background-image: url('icones/whitepaper/coverLogo2.webp');
     background-position: right 75%;
     background-size: 90%;
   }
